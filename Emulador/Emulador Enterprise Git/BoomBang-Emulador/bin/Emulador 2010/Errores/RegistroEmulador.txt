@@ -1,0 +1,1593 @@
+
+-----------------------------------------------------------------------------
+Date : 15/04/2020 23:14:33
+
+MySql.Data.MySqlClient.MySqlException
+Message : Unknown database 'free'
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 15/04/2020 23:14:33
+
+MySql.Data.MySqlClient.MySqlException
+Message : Unknown database 'free'
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 15/04/2020 23:46:48
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 15/04/2020 23:46:48
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 15/04/2020 23:49:45
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 15/04/2020 23:49:45
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 16/04/2020 0:19:49
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 16/04/2020 0:19:49
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 16/04/2020 11:00:09
+
+System.NullReferenceException
+Message : Referencia a objeto no establecida como instancia de un objeto.
+StackTrace :    en BoomBang.game.handler.LoginHandler.registro_paso_2(SessionInstance Session, String[,] Parameters) en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\handler\LoginHandler.cs:línea 230
+   en BoomBang.game.manager.InvokerManager..ctor(SessionInstance Session, String Packet) en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\InvokerManager.cs:línea 58
+-----------------------------------------------------------------------------
+Date : 16/04/2020 11:02:35
+
+System.NullReferenceException
+Message : Referencia a objeto no establecida como instancia de un objeto.
+StackTrace :    en BoomBang.game.handler.LoginHandler.registro_paso_2(SessionInstance Session, String[,] Parameters) en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\handler\LoginHandler.cs:línea 231
+   en BoomBang.game.manager.InvokerManager..ctor(SessionInstance Session, String Packet) en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\InvokerManager.cs:línea 58
+-----------------------------------------------------------------------------
+Date : 16/04/2020 11:06:54
+
+System.NullReferenceException
+Message : Referencia a objeto no establecida como instancia de un objeto.
+StackTrace :    en BoomBang.game.handler.LoginHandler.registro_paso_2(SessionInstance Session, String[,] Parameters) en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\handler\LoginHandler.cs:línea 229
+   en BoomBang.game.manager.InvokerManager..ctor(SessionInstance Session, String Packet) en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\InvokerManager.cs:línea 58
+-----------------------------------------------------------------------------
+Date : 16/04/2020 11:11:50
+
+System.NullReferenceException
+Message : Referencia a objeto no establecida como instancia de un objeto.
+StackTrace :    en BoomBang.game.handler.LoginHandler.registro_paso_2(SessionInstance Session, String[,] Parameters) en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\handler\LoginHandler.cs:línea 229
+   en BoomBang.game.manager.InvokerManager..ctor(SessionInstance Session, String Packet) en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\InvokerManager.cs:línea 58
+-----------------------------------------------------------------------------
+Date : 16/04/2020 11:14:47
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 16/04/2020 11:14:47
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 16/04/2020 11:16:18
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 16/04/2020 11:16:18
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 16/04/2020 14:08:54
+
+MySql.Data.MySqlClient.MySqlException
+Message : Unable to connect to any of the specified MySQL hosts.
+StackTrace :    en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 16/04/2020 14:09:37
+
+MySql.Data.MySqlClient.MySqlException
+Message : Unable to connect to any of the specified MySQL hosts.
+StackTrace :    en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 16/04/2020 14:09:41
+
+MySql.Data.MySqlClient.MySqlException
+Message : Unable to connect to any of the specified MySQL hosts.
+StackTrace :    en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.diccionarios.cargarDiccionarios() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 23
+   en BoomBang.game.diccionarios.Iniciar() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 19
+   en BoomBang.game.manager.HandlerManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\HandlerManager.cs:línea 41
+-----------------------------------------------------------------------------
+Date : 16/04/2020 14:46:59
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 16/04/2020 14:46:59
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.diccionarios.cargarDiccionarios() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 23
+   en BoomBang.game.diccionarios.Iniciar() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 19
+   en BoomBang.game.manager.HandlerManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\HandlerManager.cs:línea 41
+-----------------------------------------------------------------------------
+Date : 16/04/2020 14:46:59
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 16/04/2020 15:25:52
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 16/04/2020 15:25:52
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.diccionarios.cargarDiccionarios() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 23
+   en BoomBang.game.diccionarios.Iniciar() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 19
+   en BoomBang.game.manager.HandlerManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\HandlerManager.cs:línea 41
+-----------------------------------------------------------------------------
+Date : 16/04/2020 15:25:52
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 16/04/2020 15:26:09
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 16/04/2020 15:26:09
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.diccionarios.cargarDiccionarios() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 23
+   en BoomBang.game.diccionarios.Iniciar() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 19
+   en BoomBang.game.manager.HandlerManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\HandlerManager.cs:línea 41
+-----------------------------------------------------------------------------
+Date : 16/04/2020 15:26:09
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 16/04/2020 15:28:40
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 16/04/2020 15:28:40
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.diccionarios.cargarDiccionarios() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 23
+   en BoomBang.game.diccionarios.Iniciar() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 19
+   en BoomBang.game.manager.HandlerManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\HandlerManager.cs:línea 41
+-----------------------------------------------------------------------------
+Date : 16/04/2020 15:28:40
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 17/04/2020 18:02:10
+
+System.FormatException
+Message : No se puede reconocer la cadena como valor DateTime válido.
+StackTrace :    en System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   en System.Convert.ToDateTime(String value)
+   en BoomBang.game.manager.UserManager.ActualizarVipUsuarios(SessionInstance Session) en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\UserManager.cs:línea 441
+   en BoomBang.game.manager.UserManager.IniciarSesion(SessionInstance Session, String user, String pass) en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\UserManager.cs:línea 83
+-----------------------------------------------------------------------------
+Date : 17/04/2020 18:19:01
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 17/04/2020 18:19:01
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.diccionarios.cargarDiccionarios() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 23
+   en BoomBang.game.diccionarios.Iniciar() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 19
+   en BoomBang.game.manager.HandlerManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\HandlerManager.cs:línea 41
+-----------------------------------------------------------------------------
+Date : 17/04/2020 18:19:01
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 17/04/2020 18:20:46
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 17/04/2020 18:20:46
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.diccionarios.cargarDiccionarios() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 23
+   en BoomBang.game.diccionarios.Iniciar() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\diccionarios.cs:línea 19
+   en BoomBang.game.manager.HandlerManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\HandlerManager.cs:línea 41
+-----------------------------------------------------------------------------
+Date : 17/04/2020 18:20:46
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 17/04/2020 18:46:59
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 17/04/2020 18:46:59
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 17/04/2020 22:12:56
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 17/04/2020 22:12:56
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 17/04/2020 22:15:56
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 17/04/2020 22:15:56
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 17/04/2020 22:16:11
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 17/04/2020 22:16:11
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 17/04/2020 22:31:43
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 17/04/2020 22:31:43
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 17/04/2020 22:34:13
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 17/04/2020 22:34:13
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 17/04/2020 23:25:59
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 17/04/2020 23:25:59
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 0:35:45
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 0:35:45
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 0:45:47
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 0:45:47
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 0:47:02
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 0:47:02
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 0:47:15
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 0:47:15
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 0:48:46
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 0:48:46
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 0:57:53
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 0:57:53
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 1:08:33
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 1:08:33
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 1:17:31
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 1:17:31
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 1:31:18
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 1:31:18
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 1:55:39
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 1:55:39
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 2:00:13
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 2:00:13
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 13:14:29
+
+MySql.Data.MySqlClient.MySqlException
+Message : Unable to connect to any of the specified MySQL hosts.
+StackTrace :    en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 13:14:33
+
+MySql.Data.MySqlClient.MySqlException
+Message : Unable to connect to any of the specified MySQL hosts.
+StackTrace :    en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 13:16:19
+
+System.FormatException
+Message : No se puede reconocer la cadena como valor DateTime válido.
+StackTrace :    en System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   en System.Convert.ToDateTime(String value)
+   en BoomBang.game.manager.UserManager.ActualizarVipUsuarios(SessionInstance Session) en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\UserManager.cs:línea 441
+   en BoomBang.game.manager.UserManager.IniciarSesion(SessionInstance Session, String user, String pass) en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\UserManager.cs:línea 83
+-----------------------------------------------------------------------------
+Date : 18/04/2020 14:03:06
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 14:03:06
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 14:08:10
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 14:08:10
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 14:08:33
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 14:08:33
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 14:43:35
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 14:43:35
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 16:57:51
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 16:57:51
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 19:36:29
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 19:36:29
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 20:17:31
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 20:17:31
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 20:18:39
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 20:18:39
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 18/04/2020 20:26:58
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 18/04/2020 20:26:58
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27
+-----------------------------------------------------------------------------
+Date : 20/04/2020 15:33:03
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.listas.automatic_lists_row() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\listas.cs:línea 82
+-----------------------------------------------------------------------------
+Date : 20/04/2020 15:33:03
+
+MySql.Data.MySqlClient.MySqlException
+Message : Access denied for user 'root'@'localhost' (using password: YES)
+StackTrace :    en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.NativeDriver.AuthenticateNew(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en BoomBang.server.mysql..ctor() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\server\mysql.cs:línea 19
+   en BoomBang.game.manager.SalasManager.Initialize() en C:\Users\Gen\Desktop\Emulador Enterprise Git\BoomBang-Emulador\game\manager\SalasManager.cs:línea 27

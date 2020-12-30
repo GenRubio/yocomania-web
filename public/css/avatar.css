@@ -1,0 +1,37 @@
+.nerd{background-image:url(/images/avatars/nerd.png);}
+.vieja{background-image:url(/images/avatars/vieja.png);}
+.rasta{background-image:url(/images/avatars/rasta.png);}
+.viejo{background-image:url(/images/avatars/viejo.png);}
+.endia{background-image:url(/images/avatars/endia.png);}
+.mafioso{background-image:url(/images/avatars/mafioso.png);}
+.zeta{background-image:url(/images/avatars/zeta.png);}
+.gata{background-image:url(/images/avatars/gata.png);}
+.boomer{background-image:url(/images/avatars/boomer.png);}
+.DJ{background-image:url(/images/avatars/DJ.png);}
+.bruja{background-image:url(/images/avatars/bruja.png);}
+
+.cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:120px;height:120px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+

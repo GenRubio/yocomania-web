@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{938054C5-D522-4A63-A61A-5C6C5B7927CE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BoomBang</RootNamespace>
+    <AssemblyName>BoomBang</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\Desktop\BurBian ULTIMANTE\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="game\clientcontrol\client_user\UserClient.cs" />
+    <Compile Include="game\handler\BPadHandler.cs" />
+    <Compile Include="game\handler\CasasHandler.cs" />
+    <Compile Include="game\handler\CatalogoHandler.cs" />
+    <Compile Include="game\handler\ConcursosHandler.cs" />
+    <Compile Include="game\handler\FlowerHandler.cs" />
+    <Compile Include="game\handler\IntercambiosHandler.cs" />
+    <Compile Include="game\handler\InterfazHandler.cs" />
+    <Compile Include="game\handler\IslasHandler.cs" />
+    <Compile Include="game\handler\LoginHandler.cs" />
+    <Compile Include="game\handler\MiniGamesHandler.cs" />
+    <Compile Include="game\handler\NavigatorHandler.cs" />
+    <Compile Include="game\handler\NoticiasHandler.cs" />
+    <Compile Include="game\handler\npcHandler.cs" />
+    <Compile Include="game\handler\PathfindingHandler.cs" />
+    <Compile Include="game\handler\PingHandler.cs" />
+    <Compile Include="game\handler\PocionesHandler.cs" />
+    <Compile Include="game\instances\BuyObjectInstance.cs" />
+    <Compile Include="game\instances\CatalogObjectInstance.cs" />
+    <Compile Include="game\instances\EscenarioInstance.cs" />
+    <Compile Include="game\instances\IntercambioInstance.cs" />
+    <Compile Include="game\instances\IslaInstance.cs" />
+    <Compile Include="game\instances\ItemConcursoInstance.cs" />
+    <Compile Include="game\listas.cs" />
+    <Compile Include="game\manager\daily_reward\codigos_promocionales.cs" />
+    <Compile Include="game\manager\Interfazmanager.cs" />
+    <Compile Include="game\manager\npcManager.cs" />
+    <Compile Include="game\manager\pathfinding\BaneoManager.cs" />
+    <Compile Include="game\manager\pathfinding\PathFinder.cs" />
+    <Compile Include="game\manager\pathfinding\Posicion.cs" />
+    <Compile Include="game\manager\pathfinding\SearchParameters.cs" />
+    <Compile Include="game\manager\pathfinding\Trayectoria.cs" />
+    <Compile Include="game\manager\PlantasManager.cs" />
+    <Compile Include="game\manager\RankingsManager.cs" />
+    <Compile Include="game\manager\RegalosManager.cs" />
+    <Compile Include="game\instances\MiniGames\CaminoInstance.cs" />
+    <Compile Include="game\instances\MiniGames\CocosInstance.cs" />
+    <Compile Include="game\instances\MiniGames\RingInstance.cs" />
+    <Compile Include="game\instances\MiniGames\SenderoInstance.cs" />
+    <Compile Include="game\instances\MiniGames\SenderosMapas.cs" />
+    <Compile Include="game\instances\npcInstance.cs" />
+    <Compile Include="game\instances\ObjetoLanzadoInstance.cs" />
+    <Compile Include="game\instances\SalaInstance.cs" />
+    <Compile Include="game\instances\SessionInstance.cs" />
+    <Compile Include="game\instances\TrampaInstance.cs" />
+    <Compile Include="game\instances\UserInstance.cs" />
+    <Compile Include="game\manager\CasasManager.cs" />
+    <Compile Include="game\manager\CatalogoManager.cs" />
+    <Compile Include="game\manager\ConcursosManager.cs" />
+    <Compile Include="game\manager\EscenariosManager.cs" />
+    <Compile Include="game\manager\HandlerManager.cs" />
+    <Compile Include="game\manager\IntercambiosManager.cs" />
+    <Compile Include="game\manager\InvokerManager.cs" />
+    <Compile Include="game\manager\IslasManager.cs" />
+    <Compile Include="game\manager\MiniGamesManager.cs" />
+    <Compile Include="game\manager\NotificacionesManager.cs" />
+    <Compile Include="game\manager\ObjectEditor.cs" />
+    <Compile Include="game\manager\SalasManager.cs" />
+    <Compile Include="game\manager\SessionManager.cs" />
+    <Compile Include="game\manager\TrampasManager.cs" />
+    <Compile Include="game\manager\UserManager.cs" />
+    <Compile Include="game\instances\UsuarioEnObjeto.cs" />
+    <Compile Include="game\packets\Packets.cs" />
+    <Compile Include="Output.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="server\BCrypt.cs" />
+    <Compile Include="server\mysql.cs" />
+    <Compile Include="game\clientcontrol\panel_control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="game\clientcontrol\panel_control.Designer.cs">
+      <DependentUpon>panel_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="server\ServerThreads.cs" />
+    <Compile Include="Time.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="game\clientcontrol\panel_control.resx">
+      <DependentUpon>panel_control.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
