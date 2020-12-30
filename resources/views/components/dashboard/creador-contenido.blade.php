@@ -69,6 +69,7 @@
             border-radius: 1em;
             width: auto;
             min-height: 17em;
+            max-width: 31em;
             margin: 0;
         }
 
@@ -80,6 +81,7 @@
             border-radius: 1em;
             width: auto;
             min-height: 17em;
+            max-width: 31em;
             margin: 0;
         }
 
@@ -99,15 +101,21 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="row">
+            <div class="row align-items-end">
                 <div class="col">
                     <form id="publicarScreenshot">
                         <div id="succesScreenshot" class="alert alert-success" role="alert"></div>
                         @csrf
                         <div id="drop_zone_screen"><strong>Puedes arrastrar la captura de pantalla aqui.</strong></div>
                         <br>
+                        <span id="errorScreenImage" style="color:red" class="help-block"></span>
                         <div class="form-group">
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            <input name="imgScreen" type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <div class="form-group">
+                            <label>Descripción</label>
+                            <span id="errorScreenText" style="color:red" class="help-block"></span>
+                            <textarea name="textScreen" class="form-control" rows="3" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block"><strong>Publicar</strong></button>
                     </form>
@@ -115,7 +123,7 @@
                 <div class="col-md-auto"></div>
                 <div class="col col-lg-4">
                     <!-- imagen-->
-                    <img src="{{ url('/images/creador/boomerCreador.svg') }}" height="250", width="180">
+                    <img src="{{ url('/images/creador/boomerCreador.svg') }}" height="250" , width="190">
                 </div>
             </div>
         </div>
@@ -138,7 +146,7 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="row">
+            <div class="row align-items-end">
                 <div class="col">
                     <form id="publicarFanart">
                         <div id="succesFanart" class="alert alert-success" role="alert"></div>
@@ -146,15 +154,23 @@
                         <div id="drop_zone_fanart"><strong>Puedes arrastrar el dibujo aqui.</strong></div>
                         <br>
                         <div class="form-group">
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            <span id="errorFanartImage" style="color:red" class="help-block"></span>
+                            <input name="imgFanart" type="file" class="form-control-file" id="exampleFormControlFile1">
                         </div>
+                        <div class="form-group">
+                            <label>Descripción</label>
+                            <span id="errorFanartText" style="color:red" class="help-block"></span>
+                            <textarea name="textFanart" class="form-control" rows="3" required></textarea>
+                        </div>
+
                         <button type="submit" class="btn btn-primary btn-block"><strong>Publicar</strong></button>
                     </form>
                 </div>
                 <div class="col-md-auto"></div>
                 <div class="col col-lg-4">
                     <!-- imagen-->
-                    <img src="{{ url('/images/creador/NerdCreador.svg') }}" height="250", width="188">
+                    <img  src="{{ url('/images/creador/NerdCreador.svg') }}" height="250" , width="188">
+                    
                 </div>
             </div>
         </div>
@@ -188,7 +204,9 @@
                                 AVISO: El enlace del video se obtiene al dar click en apartado Compartir.<br>
                                 Para más información puedes contactar al Soporte de Yocomania.
                             </p>
-                            <input type="text" class="form-control" placeholder="https://youtu.be/zEIsG6XGltE">
+                            <span id="errorVideoYoutube" style="color:red" class="help-block"></span>
+                            <input name="videoYoutube" type="text" class="form-control"
+                                placeholder="https://youtu.be/zEIsG6XGltE" required>
                             <small class="form-text text-muted">El link de video debe tener este formato:
                                 https://youtu.be/zEIsG6XGltE .</small>
                         </div>
@@ -198,7 +216,7 @@
                 <div class="col-md-auto"></div>
                 <div class="col col-lg-4">
                     <!-- imagen-->
-                    <img src="{{ url('/images/creador/DJCreador.svg') }}" height="250", width="190">
+                    <img src="{{ url('/images/creador/DJCreador.svg') }}" height="250" , width="190">
                 </div>
             </div>
         </div>
@@ -210,4 +228,229 @@
     $("#succesScreenshot").fadeOut();
     $("#succesFanart").fadeOut();
     $("#succesPublicarVideo").fadeOut();
+    validarImagenScreen();
+    validarImagenFanart();
+    $("#publicarVideo").on('submit', function(event) {
+        event.preventDefault();
+        $("#errorVideoYoutube").fadeOut();
+        $("#succesPublicarVideo").fadeOut();
+        $.ajax({
+            url: "{{ route('perfil.crear.youtube') }}",
+            method: 'POST',
+            data: new FormData(this),
+            dataType: 'json',
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: function(data) {
+                $("#succesPublicarVideo").fadeIn();
+                $("#succesPublicarVideo").text(data.content);
+                $("#publicarVideo")[0].reset();
+            },
+            error: function(error) {
+                if (error.responseJSON.errors.videoYoutube) {
+                    $("#errorVideoYoutube").text(error.responseJSON.errors
+                            .videoYoutube)
+                        .fadeIn();
+                }
+            }
+        })
+    });
+    $("#publicarFanart").on('submit', function(event) {
+        event.preventDefault();
+        $("#errorFanartImage").fadeOut();
+        $("#errorFanartText").fadeOut();
+        $("#succesFanart").fadeOut();
+        $.ajax({
+            url: "{{ route('perfil.crear.fanart') }}",
+            method: 'POST',
+            data: new FormData(this),
+            dataType: 'json',
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: function(data) {
+                $("#succesFanart").fadeIn();
+                $("#succesFanart").text(data.content);
+                $("#publicarFanart")[0].reset();
+            },
+            error: function(error) {
+                if (error.responseJSON.errors.imgFanart) {
+                    $("#errorFanartImage").text(error.responseJSON.errors
+                            .imgFanart)
+                        .fadeIn();
+                }
+                if (error.responseJSON.errors.textFanart) {
+                    $("#errorFanartText").text(error.responseJSON.errors
+                            .textFanart)
+                        .fadeIn();
+                }
+            }
+        })
+    });
+    $("#publicarScreenshot").on('submit', function(event) {
+        event.preventDefault();
+        $("#errorScreenImage").fadeOut();
+        $("#errorScreenText").fadeOut();
+        $("#succesScreenshot").fadeOut();
+
+        $.ajax({
+            url: "{{ route('perfil.crear.screenshot') }}",
+            method: 'POST',
+            data: new FormData(this),
+            dataType: 'json',
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: function(data) {
+                $("#succesScreenshot").fadeIn();
+                $("#succesScreenshot").text(data.content);
+                $("#publicarScreenshot")[0].reset();
+            },
+            error: function(error) {
+                if (error.responseJSON.errors.imgScreen) {
+                    $("#errorScreenImage").text(error.responseJSON.errors
+                            .imgScreen)
+                        .fadeIn();
+                }
+                if (error.responseJSON.errors.textScreen) {
+                    $("#errorScreenText").text(error.responseJSON.errors
+                            .textScreen)
+                        .fadeIn();
+                }
+            }
+        })
+    });
+
+    function validarImagenScreen() {
+        let dropbox;
+        dropbox = document.getElementById("drop_zone_screen");
+        dropbox.addEventListener("dragenter", dragenter, false);
+        dropbox.addEventListener("dragover", dragover, false);
+        dropbox.addEventListener("drop", drop, false);
+
+        function dragenter(e) {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+
+        function dragover(e) {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+
+        function drop(e) {
+            e.stopPropagation();
+            e.preventDefault();
+
+            const dt = e.dataTransfer;
+            const files = dt.files;
+
+            handleFiles(files);
+        }
+
+        function handleFiles(files) {
+            treureImatgeScreenshot();
+
+            var fileTypes = ['jpg', 'jpeg', 'png'];
+            var extension = files[0].name.split('.').pop().toLowerCase(),
+                isSuccess = fileTypes.indexOf(extension) > -1;
+            if (!isSuccess) {
+                return;
+            }
+
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+
+                if (!file.type.startsWith('image/')) {
+                    continue
+                }
+
+                const img = document.createElement("img");
+                img.classList.add("obj");
+                img.file = file;
+                dropbox.appendChild(img);
+
+                const reader = new FileReader();
+                reader.onload = (function(aImg) {
+                    return function(e) {
+                        aImg.src = e.target.result;
+                    };
+                })(img);
+                reader.readAsDataURL(file);
+            }
+        }
+    }
+
+    function validarImagenFanart() {
+        let dropbox;
+        dropbox = document.getElementById("drop_zone_fanart");
+        dropbox.addEventListener("dragenter", dragenter, false);
+        dropbox.addEventListener("dragover", dragover, false);
+        dropbox.addEventListener("drop", drop, false);
+
+        function dragenter(e) {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+
+        function dragover(e) {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+
+        function drop(e) {
+            e.stopPropagation();
+            e.preventDefault();
+
+            const dt = e.dataTransfer;
+            const files = dt.files;
+
+            handleFiles(files);
+        }
+
+        function handleFiles(files) {
+            treureImatgeFanart();
+            var fileTypes = ['jpg', 'jpeg', 'png'];
+            var extension = files[0].name.split('.').pop().toLowerCase(),
+                isSuccess = fileTypes.indexOf(extension) > -1;
+            if (!isSuccess) {
+                return;
+            }
+
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+
+                if (!file.type.startsWith('image/')) {
+                    continue
+                }
+
+                const img = document.createElement("img");
+                img.classList.add("obj");
+                img.file = file;
+                dropbox.appendChild(img);
+
+                const reader = new FileReader();
+                reader.onload = (function(aImg) {
+                    return function(e) {
+                        aImg.src = e.target.result;
+                    };
+                })(img);
+                reader.readAsDataURL(file);
+            }
+        }
+    }
+
+    function treureImatgeFanart() {
+        var dropZone = document.getElementById("drop_zone_fanart");
+        var img = dropZone.querySelector("img");
+        if (img != null) dropZone.removeChild(img);
+    }
+
+    function treureImatgeScreenshot() {
+        var dropZone = document.getElementById("drop_zone_screen");
+        var img = dropZone.querySelector("img");
+        if (img != null) dropZone.removeChild(img);
+    }
+
 </script>

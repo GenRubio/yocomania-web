@@ -26,6 +26,7 @@ class EventosController extends Controller
             } else {
                 $evento->link = '';
             }
+            $evento->active = 1;
             $evento->save();
         }
         return response()->json([
@@ -34,6 +35,7 @@ class EventosController extends Controller
     }
     public function search(){
         $eventos = WebEvento::where('tipo', 2)
+        ->where('active', 1)
         ->orderBy('fecha', 'ASC')
         ->get();
         return response()->json([

@@ -10,6 +10,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AdminSupportController;
 use App\Http\Controllers\AjustesController;
+use App\Http\Controllers\CreadorContenidoController;
 use App\Http\Controllers\EventosController;
 use App\Http\Controllers\FanartController;
 use App\Http\Controllers\FichasController;
@@ -138,6 +139,15 @@ Route::middleware('auth')->group(function () {
     //Perfil Usuario Visitar
     Route::get('/perfil/{usuario}', [PerfilUserController::class, 'perfil'])
         ->name('look.user.profile');
+
+    //Creador de contenido 
+    Route::post('/perfil/creator/screenshot', [CreadorContenidoController::class, 'createScreenshot'])
+        ->name('perfil.crear.screenshot');
+    Route::post('/perfil/crear/fanart', [CreadorContenidoController::class, 'createFanart'])
+        ->name('perfil.crear.fanart');
+    Route::post('/perfil/crear/youtube', [CreadorContenidoController::class, 'createYoutube'])
+        ->name('perfil.crear.youtube');
+
     //Rankings ************************************************************************************************
     //Ranking Ring
     Route::get('ranking/ring', [RankingsController::class, 'ringRanking'])

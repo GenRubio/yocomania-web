@@ -21,6 +21,7 @@ class YoutubeController extends Controller
         $evento = new WebEvento();
         $evento->link = $link;
         $evento->tipo = 1;
+        $evento->active = 1;
         $evento->save();
 
         return response()->json([

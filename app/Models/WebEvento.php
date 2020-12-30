@@ -18,5 +18,7 @@ class WebEvento extends Model
         'tipo',
         'color',
         'image',
+        'user_id',
+        'active'
     ];
 }

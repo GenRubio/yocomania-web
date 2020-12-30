@@ -18,9 +18,11 @@ class HomeController extends Controller
         $noticias = Noticia::orderBy('id', 'DESC')->paginate(10);
         $videos = WebEvento::orderBy('id', 'DESC')
         ->where('tipo', 1)
+        ->where('active', 1)
         ->paginate(4);
         $videosEvento = WebEvento::orderBy('id', 'DESC')
         ->where('tipo', 1)
+        ->where('active', 1)
         ->paginate(12);
         $eventos = WebEvento::orderBy('fecha', 'ASC')
         ->where('tipo', 2)
