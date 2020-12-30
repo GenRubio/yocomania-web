@@ -1,5 +1,7 @@
+const LoginController = require('./controllers/LoginController');
 const PlantillaController = require('./controllers/PlantillaController');
 const RecoverPasswordAutController = require('./controllers/RecoverPasswordAutController');
+const RecoverPasswordController = require('./controllers/RecoverPasswordController');
 
 const ViewHandler = {
     init() {
@@ -12,6 +14,8 @@ const ViewHandler = {
         // Init controllers
         PlantillaController.init();
         RecoverPasswordAutController.init();
+        RecoverPasswordController.init();
+        LoginController.init();
     },
 };
 

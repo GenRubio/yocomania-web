@@ -1,3 +1,4 @@
+<div class="login-section-js"></div>
 <div class="card mr-5" style="box-shadow: 5px 10px 18px #888888;">
     <div class="card-body">
         <form method="POST" action="{{ route('login') }}">

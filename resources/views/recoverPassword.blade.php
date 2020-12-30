@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <div class="recover-password-section-js"></div>
     <script src="{{ asset(mix('js/app.js')) }}"></script>
     <div style="background-image: url('{{ url('/images/homeBaner2.png') }}'); 
         background-repeat: no-repeat; background-size: cover;">
@@ -113,48 +114,5 @@
         @include('components._footerSocialNetwork')
     </div>
 </body>
-
 </html>
-<script>
-    $(document).ready(function() {
-        $("#succesSendEmail").fadeOut();
-        $("#recuperarContraseña").on('submit', function(event) {
-            event.preventDefault();
-            $("#nombreRecoverError").fadeOut();
-            $("#emailRecoverError").fadeOut();
 
-            $.ajax({
-                url: "{{ route('send.new.password') }}",
-                method: 'POST',
-                data: new FormData(this),
-                dataType: 'json',
-                contentType: false,
-                cache: false,
-                processData: false,
-                success: function(data) {
-                    if (data.content == "error") {
-                        $("#nombreRecoverError").text("Los datos no son correctos.")
-                            .fadeIn();
-                    } else {
-                        $("#recuperarContraseña")[0].reset();
-                        $("#succesSendEmail").text(data.content);
-                        $("#succesSendEmail").fadeIn();
-                    }
-                },
-                error: function(error) {
-                    if (error.responseJSON.errors.nombreRecover) {
-                        $("#nombreRecoverError").text(error.responseJSON.errors
-                                .nombreRecover)
-                            .fadeIn();
-                    }
-                    if (error.responseJSON.errors.emailRecover) {
-                        $("#emailRecoverError").text(error.responseJSON.errors
-                                .emailRecover)
-                            .fadeIn();
-                    }
-                }
-            })
-        });
-    });
-
-</script>
