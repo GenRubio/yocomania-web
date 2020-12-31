@@ -236,6 +236,12 @@ Route::middleware('auth')->group(function () {
     //Screens
     Route::post('/admin/scree-create', [ScreenController::class, 'create'])
         ->name('create.screenshot');
+    Route::get('/admin/creador/screen', [ScreenController::class, 'getCreatorContent'])
+        ->name('solicitud.screenshots');
+    Route::get('/admin/creador/create/screen', [ScreenController::class, 'addCreatorContent'])
+        ->name('aceptar.screenshot.creator');
+    Route::get('/admin/creador/delete/screen', [ScreenController::class, 'deleteCreatorContent'])
+        ->name('eliminar.screenshot.creator');
     //Contenido YouTube
     Route::post('/admin/youtube-create', [YoutubeController::class, 'create'])
         ->name('create.youtube');

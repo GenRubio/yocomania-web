@@ -5,9 +5,17 @@
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
         <a class="nav-item nav-link active" id="nav-crear-screenshot-tab" data-toggle="tab" href="#nav-crear-screenshot"
             role="tab" aria-controls="nav-crear-screenshot" aria-selected="true">Crear</a>
+        <a class="nav-item nav-link" id="nav-creador-screenshot-tab" data-toggle="tab"
+            href="#nav-creador-screenshot" role="tab" aria-controls="nav-creador-screenshot"
+            aria-selected="true">Creador Contenido</a>
     </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade" id="nav-creador-screenshot" role="tabpanel"
+        aria-labelledby="nav-crear-screenshot-tab">
+        <br>
+        <div id="cargarCreadorScreenshot"></div>
+    </div>
     <div class="tab-pane fade show active" id="nav-crear-screenshot" role="tabpanel"
         aria-labelledby="nav-crear-screenshot-tab">
         <br>
@@ -34,7 +42,19 @@
     </div>
 </div>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function() {
+        cargarCreadorScreenshot();
+
+        function cargarCreadorScreenshot(){
+            $.ajax({
+                url: "{{ route('solicitud.screenshots') }}",
+                method: "GET",
+                success:function(data){
+                    $('#cargarCreadorScreenshot').html(data.content);
+                }
+            })
+        }
+
         $("#succesAddScreenshot").fadeOut();
         $("#crearScreenshot").on('submit', function(event) {
             event.preventDefault();
@@ -70,4 +90,5 @@
             })
         });
     });
+
 </script>

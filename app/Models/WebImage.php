@@ -15,5 +15,6 @@ class WebImage extends Model
         'link',
         'tipo',
         'active',
+        'created_at',
     ];
 }
