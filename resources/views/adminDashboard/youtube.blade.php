@@ -5,9 +5,15 @@
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
         <a class="nav-item nav-link active" id="nav-crear-youtube-tab" data-toggle="tab" href="#nav-crear-youtube"
             role="tab" aria-controls="nav-crear-youtube" aria-selected="true">Crear</a>
+        <a class="nav-item nav-link" id="nav-creador-youtube-tab" data-toggle="tab" href="#nav-creador-youtube" role="tab"
+            aria-controls="nav-creador-youtube" aria-selected="true">Creador Contenido</a>
     </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade" id="nav-creador-youtube" role="tabpanel" aria-labelledby="nav-crear-youtube-tab">
+        <br>
+        <div id="cargarCreadorYoutube"></div>
+    </div>
     <div class="tab-pane fade show active" id="nav-crear-youtube" role="tabpanel"
         aria-labelledby="nav-crear-youtube-tab">
         <br>
@@ -29,7 +35,18 @@
     </div>
 </div>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function() {
+        cargarCreadorYoutube();
+
+        function cargarCreadorYoutube() {
+            $.ajax({
+                url: "{{ route('solicitud.youtube') }}",
+                method: "GET",
+                success: function(data) {
+                    $('#cargarCreadorYoutube').html(data.content);
+                }
+            })
+        }
         $("#succesAddYoutube").fadeOut();
         $("#crearYoutube").on('submit', function(event) {
             event.preventDefault();
@@ -60,4 +77,5 @@
             })
         });
     });
+
 </script>

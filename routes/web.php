@@ -245,10 +245,21 @@ Route::middleware('auth')->group(function () {
     //Contenido YouTube
     Route::post('/admin/youtube-create', [YoutubeController::class, 'create'])
         ->name('create.youtube');
-    //Screens
+    Route::get('/admin/creador/youtube', [YoutubeController::class, 'getCreatorContent'])
+        ->name('solicitud.youtube');
+    Route::get('/admin/creador/create/youtube', [YoutubeController::class, 'addCreatorContent'])
+        ->name('aceptar.youtube.creator');
+    Route::get('/admin/creador/delete/youtube', [YoutubeController::class, 'deleteCreatorContent'])
+        ->name('eliminar.youtube.creator');
+    //Fanart
     Route::post('/admin/fanart-create', [FanartController::class, 'create'])
         ->name('create.fanart');
-
+    Route::get('/admin/creador/fanart', [FanartController::class, 'getCreatorContent'])
+        ->name('solicitud.fanart');
+    Route::get('/admin/creador/create/fanart', [FanartController::class, 'addCreatorContent'])
+        ->name('aceptar.fanart.creator');
+    Route::get('/admin/creador/delete/fanart', [FanartController::class, 'deleteCreatorContent'])
+        ->name('eliminar.fanart.creator');
     //Support Messages
     Route::get('/admin/support', [AdminSupportController::class, 'get'])
         ->name('admin.support');

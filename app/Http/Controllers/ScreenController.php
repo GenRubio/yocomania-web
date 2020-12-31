@@ -61,10 +61,10 @@ class ScreenController extends Controller
         $sopportMenssage = new WebSupportMessage();
         $sopportMenssage->id_usuario = $request->get('usuarioId');
         $sopportMenssage->subject = "Screenshot aceptado :D";
-        $sopportMenssage->contenido = "Gracias por ayudar a Yocomania a crecer. Hemos aceptado tu Screenshot 
-        , puedes encontrar to Screenshot publicado en el apartador de Screenshots en la parte principal de la pagina. 
-        Para obtener tu recompensa cangea el siguente codigo dentro de Yocomania dando click en la parte de los Créditos.
-                          Codigo: " . $codigo;
+        $sopportMenssage->contenido = "Gracias por ayudar a Yocomania a crecer. Hemos aceptado tu Screenshot
+        , puedes encontrar el Screenshot publicado en el apartador de Screenshots en la parte principal de la página.
+        Para obtener tu recompensa canjea el siguiente código dentro de Yocomania dando clic en la parte de los Créditos.
+        Código: " . $codigo;
         $sopportMenssage->save();
 
         return response()->json([

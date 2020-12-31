@@ -5,11 +5,16 @@
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
         <a class="nav-item nav-link active" id="nav-crear-fanart-tab" data-toggle="tab" href="#nav-crear-fanart"
             role="tab" aria-controls="nav-crear-fanart" aria-selected="true">Crear</a>
+        <a class="nav-item nav-link" id="nav-creador-fanart-tab" data-toggle="tab" href="#nav-creador-fanart" role="tab"
+            aria-controls="nav-creador-fanart" aria-selected="true">Creador Contenido</a>
     </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-crear-fanart" role="tabpanel"
-        aria-labelledby="nav-crear-fanart-tab">
+    <div class="tab-pane fade" id="nav-creador-fanart" role="tabpanel" aria-labelledby="nav-crear-fanart-tab">
+        <br>
+        <div id="cargarCreadorFanart"></div>
+    </div>
+    <div class="tab-pane fade show active" id="nav-crear-fanart" role="tabpanel" aria-labelledby="nav-crear-fanart-tab">
         <br>
         <div class="p-2">
             <div id="succesAddFanart" class="alert alert-success" role="alert"></div>
@@ -34,7 +39,19 @@
     </div>
 </div>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function() {
+        cargarCreadorFanart();
+
+        function cargarCreadorFanart() {
+            $.ajax({
+                url: "{{ route('solicitud.fanart') }}",
+                method: "GET",
+                success: function(data) {
+                    $('#cargarCreadorFanart').html(data.content);
+                }
+            })
+        }
+
         $("#succesAddFanart").fadeOut();
         $("#crearFanart").on('submit', function(event) {
             event.preventDefault();
@@ -70,4 +87,5 @@
             })
         });
     });
+
 </script>
