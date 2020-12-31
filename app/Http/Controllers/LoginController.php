@@ -18,7 +18,7 @@ class LoginController extends Controller
         
         if ($usuario != null){
             Auth::login($usuario);
-            
+            obtenerAmigosRecomendados();
             //LoginDetail::where('user_id', auth()->user()->id)->delete();
 
             $loginDetails = new LoginDetail();

@@ -47,12 +47,12 @@ function fetch_user_chat_history($from_user_id, $to_user_id)
     ';
   }
   $output =  $output . '</ul>';
-  
+
   ///Borar mensajes pendientes
   ChatMessage::where('from_user_id', $to_user_id)
-  ->where('to_user_id', $from_user_id)
-  ->where('status', 1)
-  ->update(['status' => 0]);
+    ->where('to_user_id', $from_user_id)
+    ->where('status', 1)
+    ->update(['status' => 0]);
 
   return $output;
 }
@@ -95,21 +95,36 @@ function Gcrypt($password)
   return $newPassword;
 }
 
-function count_unseen_message($from_user_id, $to_user_id){
+function count_unseen_message($from_user_id, $to_user_id)
+{
   $messages = ChatMessage::where('from_user_id', $from_user_id)
-  ->where('to_user_id', $to_user_id)
-  ->where('status', 1)
-  ->count();
-  
-  if ($messages > 0){
+    ->where('to_user_id', $to_user_id)
+    ->where('status', 1)
+    ->count();
+
+  if ($messages > 0) {
     return $messages;
   }
 }
 
-function supportMessages(){
+function supportMessages()
+{
   $mensajes = WebSupportMessage::where('id_usuario', auth()->user()->id)
-  ->where('visto', 1)->count();
-  if ($mensajes > 0){
+    ->where('visto', 1)->count();
+  if ($mensajes > 0) {
     return $mensajes;
   }
+}
+function obtenerAmigosRecomendados()
+{
+  if (!session()->has('amigosRecomendados')) {
+    $amigosRecomendados = Usuario::inRandomOrder()
+    ->limit(7)
+    ->get();
+
+    session(['amigosRecomendados' => $amigosRecomendados]);
+  }
+}
+function eliminarAmigosRecomendados(){
+  session()->pull('amigosRecomendados');
 }

@@ -38,6 +38,7 @@ class RegistroController extends Controller
         $usuario->save();
 
         Auth::login($usuario);
+        obtenerAmigosRecomendados();
         
         return response()->json([
         ], Response::HTTP_CREATED);    

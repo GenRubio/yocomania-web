@@ -16,6 +16,7 @@ class DashboardController extends Controller
     }
     public function logout(Usuario $usuario)
     {
+        eliminarAmigosRecomendados();
         Auth::logout();
         LoginDetail::where('user_id', $usuario->id)->delete();
         return redirect()->route('home');

@@ -138,9 +138,7 @@ class BpadsController extends Controller
 
     public function recomendado(Request $request){
 
-        $amigosRecomendados = Usuario::inRandomOrder()
-        ->limit(7)
-        ->get();
+        $amigosRecomendados = session()->get('amigosRecomendados');
 
         $content = view('components.perfilUsuario.buscarAmigos.amigos-interfaz', compact('amigosRecomendados'))->render();
         return response()->json([

@@ -32,7 +32,7 @@
 
             </div>
             <div class="col align-self-center text-center">
-                <a href="{{ route('look.user.profile', $persona->nombre) }}" target="_blank" style="color: white" class="btn btn btn-info btn-lg shadow p-3">
+                <a href="{{ route('look.user.profile', $persona->nombre) }}" style="color: white" class="btn btn btn-info btn-lg shadow p-3">
                     <strong>Visitar Perfil</strong>
                 </a>
             </div>
