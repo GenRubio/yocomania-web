@@ -25,3 +25,6 @@
 @isset($sendero)
 <img src="{{ url('/images/levelsSvg/liana.png') }}" height="43" , width="40">
 @endisset
+@isset($oro)
+<img src="{{ url('/images/perfil/monedasOro.png') }}" height="39" , width="37">
+@endisset

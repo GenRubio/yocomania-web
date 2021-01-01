@@ -58,10 +58,10 @@
                     <div class="row">
                         <div class="col p-1">
                             <div class="card shadow">
-                                <div class="card-header w-100 text-center">
-                                    <h2 style="color: #3490dc"><strong>Windows</strong></h2>
+                                <div class="card-header w-100 text-center" style="background-color: #af3911db">
+                                    <h2 style="color: #3490dc"><strong style="color: gold">Windows</strong></h2>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" style="background-color: #c6481dc2">
 
                                     <div class="d-flex justify-content-center">
                                         <a href="#">
@@ -76,10 +76,10 @@
                         <div class="col-md-auto"></div>
                         <div class="col p-1">
                             <div class="card shadow">
-                                <div class="card-header w-100 text-center">
-                                    <h2 style="color: #3490dc"><strong>Mac OS</strong></h2>
+                                <div class="card-header w-100 text-center" style="background-color: #af3911db">
+                                    <h2 style="color: #3490dc"><strong style="color: gold">Mac OS</strong></h2>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" style="background-color: #c6481dc2">
                                     <div class="d-flex justify-content-center">
                                         <a href="#">
                                             <img src="{{ url('/images/download/mac-download-button.png') }}" ,

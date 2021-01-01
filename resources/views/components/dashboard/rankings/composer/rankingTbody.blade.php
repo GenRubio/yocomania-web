@@ -36,6 +36,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -85,6 +87,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @else
@@ -122,6 +128,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -171,6 +179,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @endif
@@ -211,6 +223,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -260,6 +274,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @else
@@ -297,6 +315,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -346,6 +366,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @endif
@@ -385,6 +409,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -434,6 +460,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @else
@@ -471,6 +501,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -520,6 +552,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @endif
@@ -559,6 +595,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -608,6 +646,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @else
@@ -645,6 +687,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -694,6 +738,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @endif
@@ -737,6 +785,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -786,6 +836,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @else
@@ -823,6 +877,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -872,6 +928,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @endif
@@ -912,6 +972,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -961,6 +1023,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @else
@@ -998,6 +1064,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -1047,6 +1115,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @endif
@@ -1088,6 +1160,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -1137,6 +1211,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @else
@@ -1174,6 +1252,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -1223,6 +1303,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @endif
@@ -1262,6 +1346,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -1311,6 +1397,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @else
@@ -1348,6 +1438,8 @@
                         <th>{{ $usuario->senderos_ganados }}</th>
                     @elseif (isset($puntos_cocos))
                         <th>{{ $usuario->puntos_cocos }}</th>
+                    @elseif (isset($oro))
+                        <th>{{ $usuario->oro }}</th>
                     @endif
                     @if (isset($besos_enviados))
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
@@ -1397,6 +1489,10 @@
                         <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
                             $usuario,
                             'cocosLocos' => true])</th>
+                    @elseif (isset($oro))
+                        <th class="p-0">@include('components.dashboard.rankings.levelsComposer.levels', ['usuario' =>
+                            $usuario,
+                            'oro' => true])</th>
                     @endif
                 </tr>
             @endif

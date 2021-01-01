@@ -68,7 +68,7 @@
                                 <strong style="font-size: 20px;">Cocos Locos</strong>
                             </div>
                         </div>
-                     
+
                     </div>
                 </a>
                 <a href="{{ route('ranking.camino-ninja') }}" style="text-decoration: none">
@@ -82,7 +82,7 @@
                                 <strong style="font-size: 20px;">Camino Ninja</strong>
                             </div>
                         </div>
-                      
+
                     </div>
                 </a>
 
@@ -92,6 +92,19 @@
                 <div class="d-flex justify-content-center">
                     <h3><strong style="color: #dc7e05;">Estadísticas</strong></h3>
                 </div>
+                <a href="{{ route('ranking.forbes') }}" style="text-decoration: none;">
+                    <div class="border shadow-sm rounded p-2 mb-1"
+                        style="{{ Request::is('ranking/forbes') ? 'background-color: #3490dc; color: white;' : '' }}">
+                        <div class="d-flex">
+                            <div>
+                                <img src="{{ url('/images/perfil/monedasOro.png') }}" height="30" , width="32">
+                            </div>
+                            <div class="ml-2">
+                                <strong style="font-size: 20px;">Forbes</strong>
+                            </div>
+                        </div>
+                    </div>
+                </a>
                 <a href="{{ route('ranking.besos') }}" style="text-decoration: none;">
                     <div class="border shadow-sm rounded p-2 mb-1"
                         style="{{ Request::is('ranking/besos') ? 'background-color: #3490dc; color: white;' : '' }}">
@@ -103,7 +116,6 @@
                                 <strong style="font-size: 20px;">Besos</strong>
                             </div>
                         </div>
-                      
                     </div>
                 </a>
                 <a href="{{ route('ranking.bebidas') }}" style="text-decoration: none">
@@ -117,7 +129,7 @@
                                 <strong style="font-size: 20px;">Bebidas</strong>
                             </div>
                         </div>
-                       
+
                     </div>
                 </a>
                 <a href="{{ route('ranking.flores') }}" style="text-decoration: none">
@@ -131,7 +143,7 @@
                                 <strong style="font-size: 20px;">Flores</strong>
                             </div>
                         </div>
-                       
+
                     </div>
                 </a>
                 <a href="{{ route('ranking.uppercuts') }}" style="text-decoration: none">
@@ -145,7 +157,7 @@
                                 <strong style="font-size: 20px;">Uppercuts</strong>
                             </div>
                         </div>
-                        
+
                     </div>
                 </a>
                 <a href="{{ route('ranking.cocos') }}" style="text-decoration: none">
@@ -159,7 +171,7 @@
                                 <strong style="font-size: 20px;">Cocos</strong>
                             </div>
                         </div>
-                        
+
                     </div>
                 </a>
             </div>
@@ -193,6 +205,9 @@
                 @endisset
                 @isset($cocos_locos)
                     @include('components.dashboard.rankings.cocos_locos')
+                @endisset
+                @isset($forbes)
+                    @include('components.dashboard.rankings.forbes')
                 @endisset
             </div>
         </div>

@@ -54,4 +54,8 @@ class RankingsController extends Controller
         $cocos = true;
         return view('components.dashboard.rankings', compact('cocos'));
     }
+    public function forbesRanking(){
+        $forbes = true;
+        return view('components.dashboard.rankings', compact('forbes'));
+    }
 }

@@ -29,6 +29,7 @@ use App\Http\Controllers\Rankings\UppercutsController;
 use App\Http\Controllers\Rankings\CocosController;
 use App\Http\Controllers\Rankings\CocosLocosController;
 use App\Http\Controllers\Rankings\SenderoOcultoController;
+use App\Http\Controllers\Rankings\ForbesController;
 use App\Http\Controllers\SupportController;
 
 //Home 
@@ -224,7 +225,11 @@ Route::middleware('auth')->group(function () {
         ->name('ranking.cocos');
     Route::get('/ranking/cocos/enviados', [CocosController::class, 'cocosEnviadosRanking'])
         ->name('ranking.cocos.enaviados');
-
+    // Ranking Forbes
+    Route::get('ranking/forbes', [RankingsController::class, 'forbesRanking'])
+        ->name('ranking.forbes');
+    Route::get('/ranking/forbes/global', [ForbesController::class, 'forbesGlobal'])
+        ->name('ranking.forbes.global');
     //Administrator Dashboard Content
     //Eventos
     Route::post('/admin/event-create', [EventosController::class, 'create'])
