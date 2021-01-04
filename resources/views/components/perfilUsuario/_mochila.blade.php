@@ -21,9 +21,10 @@
     <div class="row text-center justify-content-center">
         @foreach ($objetos as $objeto)
             <a class="col-sm-6 col-md-4 col-lg-3 border rounded shadow m-3 btn" data-toggle="modal"
-                data-target="#objeto{{ $objeto->objeto_id }}" style="min-height: 170px; max-height: 170px;position: relative;">
+                data-target="#objeto{{ $objeto->objeto_id }}"
+                style="min-height: 170px; max-height: 170px;position: relative;">
                 @if ($objeto->img == 0)
-                    <img  style="max-height: 100%;
+                    <img style="max-height: 100%;
                     max-width: 100%;
                     width: auto;
                     height: auto;
@@ -34,7 +35,7 @@
                     right: 0;
                     margin: auto;" src="{{ url('/images/objetos/previewObject.svg') }}">
                 @else
-                    <img  style="max-height: 100%;
+                    <img style="max-height: 100%;
                     max-width: 100%;
                     width: auto;
                     height: auto;
@@ -43,8 +44,7 @@
                     bottom: 0;
                     left: 0;
                     right: 0;
-                    margin: auto;"
-                        src="{{ url('/images/objetos/' . $objeto->swf . '.png') }}">
+                    margin: auto;" src="{{ url('/images/objetos/' . $objeto->swf . '.png') }}">
                 @endif
             </a>
             <div class="modal fade" id="objeto{{ $objeto->objeto_id }}" tabindex="-1" role="dialog"
@@ -195,7 +195,9 @@
             </script>
         @endforeach
     </div>
-    <br><br>
-    <br><br>
+    <br>
+    <div class="d-flex justify-content-center">
+        {{ $objetos->links('pagination::bootstrap-4') }}
+    </div>
     <br><br>
 </div>

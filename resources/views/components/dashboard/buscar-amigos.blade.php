@@ -4,8 +4,8 @@
         <form id="buscarTodasPersonas" class="form-inline">
             @csrf
             <div class="form-group m-2 col-xs-5">
-                <input name="search-live-person" id="search-live-person" type="text" class="form-control"
-                  maxlength="13"  placeholder="Nombre de Yocomaniaco">
+                <input name="search-live-person" id="search-live-person" type="text" class="form-control" maxlength="13"
+                    placeholder="Nombre de Yocomaniaco">
             </div>
             <button type="submit" class="btn btn-primary"><strong>Buscar</strong></button>
         </form>
@@ -72,18 +72,22 @@
             })
         });
         ///Pagination controller
-        $(document).on('click', '.pagination a', function(event){
+        $(document).on('click', '.pagination a', function(event) {
             event.preventDefault();
-            var page = $(this).attr('href').split('page=')[1];
-            buscar_contenido_amigos(page);
+            let ruta = $(this).attr('href').toString();
+            if (ruta.includes("user/amigos/buscar") || ruta.includes("/user/paginate/friends")) {
+                var page = $(this).attr('href').split('page=')[1];
+                buscar_contenido_amigos(page);
+            }
         });
-        function buscar_contenido_amigos(page){
+
+        function buscar_contenido_amigos(page) {
             $.ajax({
-                url:"/user/paginate/friends?page=" + page,
+                url: "/user/paginate/friends?page=" + page,
                 data: {
                     search_live_person: $("#search-live-person").val()
                 },
-                success:function(data){
+                success: function(data) {
                     $('#resultadoAmigos').html(data.content);
                 }
             });

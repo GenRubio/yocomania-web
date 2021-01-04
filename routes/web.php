@@ -153,6 +153,7 @@ Route::middleware('auth')->group(function () {
     //Mochila Perfil usuario
     Route::post('/perfil/mochila/user', [MochilaController::class, 'load'])
         ->name('obtener.mochila');
+    Route::get('mochila/paginate', [MochilaController::class, 'paginate_search']);
     //Venta Objetos
     Route::post('/perfil/mochila/sell', [MochilaController::class, 'sell'])
         ->name('vender.objeto');

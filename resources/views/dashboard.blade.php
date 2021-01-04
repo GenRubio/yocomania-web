@@ -214,7 +214,23 @@
                     }
                 });
             }
+            $(document).on('click', '.pagination a', function(event) {
+                event.preventDefault();
+                let ruta = $(this).attr('href').toString();
+                if (ruta.includes("/perfil/mochila/user") || ruta.includes("/mochila/paginate")) {
+                    var page = $(this).attr('href').split('page=')[1];
+                    siguente_lista_muchila(page);
+                }
+            });
 
+            function siguente_lista_muchila(page) {
+                $.ajax({
+                    url: "/mochila/paginate?page=" + page,
+                    success: function(data) {
+                        $('#obtenerMochilaUsuario').html(data.content);
+                    }
+                });
+            }
             //****************************************************************
 
             function obtener_Bpads() {
