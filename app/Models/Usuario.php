@@ -24,5 +24,6 @@ class Usuario extends Authenticable
         'active_token',
         'besos_enviados',
         'besos_recibidos',
+        'Online',
     ];
 }

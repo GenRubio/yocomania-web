@@ -3,7 +3,7 @@
 @section('header')
     <div
         style="background-image: url('{{ url('/images/homeBaner2.png') }}'); 
-                                                                                                                                                                        background-repeat: no-repeat; background-size: cover;">
+                                                                                                                                                                                    background-repeat: no-repeat; background-size: cover;">
         <div class="container">
             <div style="height: 266px;"></div>
         </div>
@@ -82,9 +82,9 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="nav-mochila" role="tabpanel" aria-labelledby="nav-mochila-tab">
-                                ...</div>
+                               <div id="obtenerMochilaUsuario"></div>
+                            </div>
                         </div>
-
                         <br>
                         <div class="container shadow-lg rounded" style="background-color: white;">
                             @include('components.perfilUsuario._socialNetwork')
@@ -200,6 +200,21 @@
                     }
                 })
             }
+            //Mochila Usuario
+            obtener_Mochila();
+            function obtener_Mochila() {
+                $.ajax({
+                    url: "{{ route('obtener.mochila') }}",
+                    method: "POST",
+                    data: {
+                        "_token": "{{ csrf_token() }}"
+                    },
+                    success: function(data) {
+                        $('#obtenerMochilaUsuario').html(data.content);
+                    }
+                });
+            }
+
             //****************************************************************
 
             function obtener_Bpads() {

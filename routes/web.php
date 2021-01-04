@@ -14,6 +14,7 @@ use App\Http\Controllers\CreadorContenidoController;
 use App\Http\Controllers\EventosController;
 use App\Http\Controllers\FanartController;
 use App\Http\Controllers\FichasController;
+use App\Http\Controllers\MochilaController;
 use App\Http\Controllers\PerfilUserController;
 use App\Http\Controllers\RankingsController;
 use App\Http\Controllers\RecoverPassword;
@@ -148,6 +149,19 @@ Route::middleware('auth')->group(function () {
         ->name('perfil.crear.fanart');
     Route::post('/perfil/crear/youtube', [CreadorContenidoController::class, 'createYoutube'])
         ->name('perfil.crear.youtube');
+
+    //Mochila Perfil usuario
+    Route::post('/perfil/mochila/user', [MochilaController::class, 'load'])
+        ->name('obtener.mochila');
+    //Venta Objetos
+    Route::post('/perfil/mochila/sell', [MochilaController::class, 'sell'])
+        ->name('vender.objeto');
+
+
+
+
+
+
 
     //Rankings ************************************************************************************************
     //Ranking Ring
