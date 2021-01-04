@@ -127,6 +127,9 @@
                                         <br>
                                         <button type="submit"
                                             class="btn btn-primary btn-block mb-2"><strong>Vender</strong></button>
+                                        @if (auth()->user()->admin == 1)
+                                            <p style="color: red;">SWF: {{ $objeto->swf }}</p>
+                                        @endif
                                     </form>
                                 </div>
                                 <div class="tab-pane fade" id="nav-subastar{{ $objeto->objeto_id }}" role="tabpanel"
