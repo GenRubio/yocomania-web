@@ -66,6 +66,19 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link {{ Request::is('shop') ? 'active' : '' }}"
+                    href="{{ url('/shop') }}">
+                    <div class="d-flex">
+                        <div class="mr-1">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div>
+                            <strong>Tienda</strong>
+                        </div>
+                    </div>  
+                </a>
+            </li>
+            <li class="nav-item">
                 <form id="cerrarSession" method="POST"
                     action="{{ route('logout', ['usuario' => auth()->user()->id]) }}">
                     @csrf
