@@ -157,8 +157,10 @@ Route::middleware('auth')->group(function () {
     //Venta Objetos
     Route::post('/perfil/mochila/sell', [MochilaController::class, 'sell'])
         ->name('vender.objeto');
-
-
+    Route::get('/perfil/cargar/ventas', [MochilaController::class, 'ventas'])
+        ->name('cargar.user.ventas');
+    Route::post('/perfil/delete/sell', [MochilaController::class, 'deleteSell'])
+        ->name('eliminar.user.venta');
 
 
 
