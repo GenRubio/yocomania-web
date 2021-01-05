@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\RegistroRequest;
+use App\Models\ArmarioFicha;
 use App\Models\Usuario;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -39,6 +40,11 @@ class RegistroController extends Controller
 
         Auth::login($usuario);
         obtenerAmigosRecomendados();
+
+        $fichaPrincipal = new ArmarioFicha();
+        $fichaPrincipal->user_id = auth()->user()->id;
+        $fichaPrincipal->ficha_id = 18;
+        $fichaPrincipal->save();
         
         return response()->json([
         ], Response::HTTP_CREATED);    
