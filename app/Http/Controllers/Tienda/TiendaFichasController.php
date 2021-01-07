@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Tienda;
 use App\Http\Controllers\Controller;
 use App\Models\ArmarioFicha;
 use App\Models\Usuario;
+use App\Models\WebSupportMessage;
 use App\Models\WebTiendaFicha;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -49,6 +50,13 @@ class TiendaFichasController extends Controller
                                 $newFicha->user_id = $buscarAmigo->id;
                                 $newFicha->ficha_id = $ficha->ficha_id;
                                 $newFicha->save();
+
+                                $mensaje = new WebSupportMessage();
+                                $mensaje->id_usuario = $buscarAmigo->id;
+                                $mensaje->subject = "Regalo " . $ficha->titulo . " recibido.";
+                                $mensaje->contenido = "Hola, " . $buscarAmigo->nombre . " has recibido un regalo por parte de " . 
+                                auth()->user()->nombre . ". Nueva " . $ficha->titulo . " ya esta disponible en el armario de Fichas.";
+                                $mensaje->save();
                             }
                         }
                     } else {
