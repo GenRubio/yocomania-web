@@ -16,6 +16,8 @@ class Usuario extends Authenticable
         'colores',
         'email',
         'edad',
+        'oro',
+        'plata',
         'ip_registro',
         'ip_actual',
         'fecha_registro',

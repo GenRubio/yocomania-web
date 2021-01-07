@@ -33,6 +33,7 @@ use App\Http\Controllers\Rankings\SenderoOcultoController;
 use App\Http\Controllers\Rankings\ForbesController;
 use App\Http\Controllers\SupportController;
 use App\Http\Controllers\Tienda\TiendaController;
+use App\Http\Controllers\Tienda\TiendaFichasController;
 
 //Home 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -168,6 +169,11 @@ Route::middleware('auth')->group(function () {
     //Tienda de objetos
     Route::get('/shop', [TiendaController::class, 'show'])
         ->name('show.tienda');
+    //Tienda Fichas
+    Route::get('/shop/fichas', [TiendaFichasController::class, 'show'])
+        ->name('show.tienda.fichas');
+    Route::post('/shop/ficha/comprar', [TiendaFichasController::class, 'comprar'])
+        ->name('tienda.fichas.comprar');
 
     //Rankings ************************************************************************************************
     //Ranking Ring
