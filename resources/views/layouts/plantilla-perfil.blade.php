@@ -14,6 +14,7 @@
         @include('partials.viewconfig.head_scripts')
         @yield('head_script')
     </script>
+    <link rel="icon" href="{{ asset('images/favicon.png') }}">
 </head>
 
 <body>

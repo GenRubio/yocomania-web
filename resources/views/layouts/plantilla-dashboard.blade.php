@@ -15,6 +15,9 @@
         @yield('head_script')
 
     </script>
+    <livewire:styles />
+    <livewire:scripts />
+    <link rel="icon" href="{{ asset('images/favicon.png') }}">
 </head>
 
 <body>
@@ -23,8 +26,6 @@
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0&appId=235362160321908&autoLogAppEvents=1"
         nonce="ECJ4KVc4"></script>
-    <livewire:styles />
-    <livewire:scripts />
     <div id="header">
         @yield('header')
     </div>

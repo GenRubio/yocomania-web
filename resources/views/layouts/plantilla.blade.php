@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url('/css/screenshots.css') }}">
     <script src="{{ url('/js/main.js') }}"></script>
     {{-- JS Config --}}
+    <link rel="icon" href="{{ asset('images/favicon.png') }}">
     <script type="text/javascript">
         @include('partials.viewconfig.head_scripts')
         @yield('head_script')
