@@ -68,7 +68,7 @@
                 background-image: url('{{ url('/images/dashboarSVG/banner10.png') }}');"></div>
             </div>
             <div class="tab-pane fade" id="nav-creditos" role="tabpanel" aria-labelledby="nav-creditos-tab">
-                ...
+                <livewire:tienda-creditos />
                  <div style="min-height: 300px;
                 background-repeat: no-repeat;
                 background-position: center;
