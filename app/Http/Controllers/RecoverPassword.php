@@ -12,6 +12,7 @@ use App\Mail\RecoverPasswordMail;
 use App\Models\WebEvento;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
+use App\Models\ArmarioFicha;
 
 class RecoverPassword extends Controller
 {
@@ -102,10 +103,19 @@ class RecoverPassword extends Controller
                 $usuario->password = Gcrypt($newPassword);
                 $usuario->save();
 
+                if ($usuario->stripe_id == null) {
+                    $usuario->createAsStripeCustomer();
+
+                    $fichaPrincipal = new ArmarioFicha();
+                    $fichaPrincipal->user_id = auth()->user()->id;
+                    $fichaPrincipal->ficha_id = 18;
+                    $fichaPrincipal->save();
+                }
+
                 Auth::login($usuario);
-        
-                return response()->json([
-                ], Response::HTTP_CREATED);    
+                obtenerAmigosRecomendados();
+
+                return response()->json([], Response::HTTP_CREATED);
             }
         }
 

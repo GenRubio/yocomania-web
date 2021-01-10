@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class TiendaController extends Controller
 {
-    public function show(){
+    public function show()
+    {
         return view('components.dashboard.tienda');
     }
 }

@@ -37,6 +37,8 @@ class RegistroController extends Controller
         $usuario->ip_actual = "";
         $usuario->fecha_registro = date("Y-m-d H:i:s");
         $usuario->save();
+        
+        $usuario->createAsStripeCustomer();
 
         Auth::login($usuario);
         obtenerAmigosRecomendados();
