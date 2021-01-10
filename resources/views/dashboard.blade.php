@@ -164,7 +164,7 @@
 
             setInterval(function() {
                 if (focusYocomaniacoSearch == false) {
-                    update_last_activity();
+                    //update_last_activity();
                     obtener_Bpads();
                 }
             }, 10000);

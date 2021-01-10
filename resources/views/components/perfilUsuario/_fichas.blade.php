@@ -66,7 +66,7 @@ $fichaActual = "fichaFamele.png";
         @endforeach
         @foreach ($fichasNoMias as $ficha)
             <div class="col p-1 text-center">
-                <img style="filter:brightness(0.4);" src="{{ url('/images/Fichas/' . $ficha->nombreImg) }}" height="200"
+                <img style="filter:brightness(0.4);cursor: pointer;" class="comprarFicha" src="{{ url('/images/Fichas/' . $ficha->nombreImg) }}" height="200"
                     , width="140">
             </div>
         @endforeach
@@ -106,6 +106,9 @@ $fichaActual = "fichaFamele.png";
                     $("#miFicha").html(`<img src="` + urlImagen + `">`);
                 },
             });
+        });
+        $(document).on('click', '.comprarFicha', function() {
+            window.location.href = "{{ route('show.tienda') }}";
         });
     });
 

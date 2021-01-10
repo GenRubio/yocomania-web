@@ -21,9 +21,9 @@ class LoginController extends Controller
             obtenerAmigosRecomendados();
             //LoginDetail::where('user_id', auth()->user()->id)->delete();
 
-            $loginDetails = new LoginDetail();
+            /*$loginDetails = new LoginDetail();
             $loginDetails->user_id = auth()->user()->id;
-            $loginDetails->save();
+            $loginDetails->save();*/
 
 
             return redirect()->intended('/me');
