@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
+    <livewire:styles />
+    <livewire:scripts />
     <title>Dashboard</title>
 </head>
 
@@ -53,6 +55,9 @@
                         <a class="nav-link" id="v-pills-support-tab" data-toggle="pill" href="#v-pills-support"
                             role="tab" aria-controls="v-pills-support" aria-selected="false"><strong>Support
                                 Message</strong></a>
+                        <a class="nav-link" id="v-pills-tienda-creditos-tab" data-toggle="pill"
+                            href="#v-pills-tienda-creditos" role="tab" aria-controls="v-pills-tienda-creditos"
+                            aria-selected="false"><strong>Tienda Créditos</strong></a>
                     </div>
                 </div>
                 <div class="col">
@@ -90,9 +95,13 @@
                             @include('adminDashboard.youtube')
                         </div>
                         <div class="tab-pane fade" id="v-pills-support" role="tabpanel"
-                        aria-labelledby="v-pills-support-tab">
-                        @include('adminDashboard.support')
-                    </div>
+                            aria-labelledby="v-pills-support-tab">
+                            @include('adminDashboard.support')
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-tienda-creditos" role="tabpanel"
+                            aria-labelledby="v-pills-tienda-creditos-tab">
+                            <livewire:crear-producto/>
+                        </div>
                     </div>
                     <br><br><br><br>
                     <br><br><br><br>
