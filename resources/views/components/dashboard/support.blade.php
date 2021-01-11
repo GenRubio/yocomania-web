@@ -1,5 +1,5 @@
 <br>
-<div class="container shadow-lg rounded p-3" style="background-color: white;">
+<div class="container shadow-lg rounded p-3" style="background-color: white;min-height:618px;">
     <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <a class="nav-item nav-link active" id="nav-redactar-tab" data-toggle="tab" href="#nav-redactar" role="tab"
@@ -9,6 +9,9 @@
                 @if ($mensajes > 0)
                     <span class="badge badge-success align-middle"><strong>{{ $mensajes }}</strong></span>
                 @endif
+            </a>
+            <a class="nav-item nav-link" id="nav-reclamo-tab" data-toggle="tab" href="#nav-reclamo" role="tab"
+                aria-controls="nav-reclamo" aria-selected="false"><strong style="color: #dc7e05;">Recuperar datos</strong>
             </a>
         </div>
     </nav>
@@ -63,6 +66,10 @@
                 </div>
             </div>
         </div>
+        <div class="tab-pane fade"  id="nav-reclamo" role="tabpanel"
+            aria-labelledby="nav-reclamo-tab">
+            <livewire:recuperar-datos/>
+        </div>
     </div>
 </div>
 <br>
@@ -72,7 +79,7 @@
 
         obtenerSupportMessages();
 
-        
+
         function obtenerSupportMessages() {
             $.ajax({
                 url: "{{ route('obtener.user.support.message') }}",
