@@ -7,7 +7,7 @@
             {{ session('success') }}
         </div>
     @endif
-    <form wire:submit.prevent="crear">
+    <form wire:submit.prevent="crear" encrypt="multipart/form-data">
         @csrf
         <div class="form-group">
             <label>Nombre producto</label>
@@ -17,7 +17,17 @@
         <div class="form-group">
             <label>Precio</label>
             @error('precio') <span class="error" style="color: red">{{ $message }}</span> @enderror
-            <input wire:model.debounce.500ms="precio" type="number" class="form-control">
+            <input wire:model="precio" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Créditos</label>
+            @error('creditos') <span class="error" style="color: red">{{ $message }}</span> @enderror
+            <input wire:model="creditos" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Imagen producto</label>
+            @error('image') <span class="error" style="color: red">{{ $message }}</span> @enderror
+            <input id="image" type="file" class="form-control-file" wire:model="image">
         </div>
         <button type="submit" class="btn btn-primary">Crear</button>
     </form>

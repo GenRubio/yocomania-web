@@ -32,6 +32,7 @@ use App\Http\Controllers\Rankings\CocosLocosController;
 use App\Http\Controllers\Rankings\SenderoOcultoController;
 use App\Http\Controllers\Rankings\ForbesController;
 use App\Http\Controllers\SupportController;
+use App\Http\Controllers\Tienda\PagosConstroller;
 use App\Http\Controllers\Tienda\TiendaController;
 use App\Http\Controllers\Tienda\TiendaFichasController;
 
@@ -174,6 +175,10 @@ Route::middleware('auth')->group(function () {
         ->name('show.tienda.fichas');
     Route::post('/shop/ficha/comprar', [TiendaFichasController::class, 'comprar'])
         ->name('tienda.fichas.comprar');
+
+    //Pagos manager
+    Route::get('/shop/pagos', [PagosConstroller::class, 'comprobar'])
+        ->name('tienda.pagos');
 
     //Rankings ************************************************************************************************
     //Ranking Ring
