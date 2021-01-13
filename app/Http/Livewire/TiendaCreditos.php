@@ -27,7 +27,6 @@ class TiendaCreditos extends Component
             else{
                 return back();
             }
-            
         }
     }
 }

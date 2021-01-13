@@ -47,7 +47,7 @@
                 background-image: url('{{ url('/images/dashboarSVG/banner10.png') }}');"></div>
             </div>
             <div class="tab-pane fade" id="nav-mercado" role="tabpanel" aria-labelledby="nav-mercado-tab">
-                ...
+                <livewire:tienda-mercado/>
                  <div style="min-height: 300px;
                 background-repeat: no-repeat;
                 background-position: center;

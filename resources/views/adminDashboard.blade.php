@@ -72,7 +72,7 @@
                         </div>
                         <div class="tab-pane fade" id="v-pills-noticias" role="tabpanel"
                             aria-labelledby="v-pills-noticias-tab">
-                            ...
+                            <livewire:create-noticia/>
                         </div>
                         <div class="tab-pane fade" id="v-pills-eventos" role="tabpanel"
                             aria-labelledby="v-pills-eventos-tab">
