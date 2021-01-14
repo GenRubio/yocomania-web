@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Yocomania Chat & Play" />
+    <meta property="og:description"
+        content="Chatea y juega en la comunidad virtual de Yocomania. Crea tu isla, decórala con objetos e invita a tus amigos a visitarla, Participa en los concursos de ..." />
+    <meta property="og:image" content="" />
     <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
     <script src="{{ url('/js/main.js') }}"></script>
     <title>Yoco: {{ $usuario->nombre }}</title>
