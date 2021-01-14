@@ -19,14 +19,11 @@ class TiendaMercado extends Component
             ->join('objetos', 'objetos.id', '=', 'web_objetos_ventas.objeto_id')
             ->select('web_objetos_ventas.id', 'web_objetos_ventas.compra_id', 'web_objetos_ventas.usuario_id', 'web_objetos_ventas.objeto_id', 'web_objetos_ventas.oro', 'web_objetos_ventas.plata', 'objetos.swf', 'objetos.img', 'objetos.titulo')
             ->where('objetos.titulo', 'like', $search)
-           /* ->where(function ($query) {
-                $query->where('web_objetos_ventas.oro', '>', $this->priceMin)
-                      ->orWhere('web_objetos_ventas.plata', '>',  $this->priceMin);
-            })*/
             ->where(function ($query) {
-                $query->where('web_objetos_ventas.oro', '<>', $this->priceMax)
-                      ->orWhere('web_objetos_ventas.plata', '<>',  $this->priceMax);
+                $query ->whereBetween('web_objetos_ventas.oro', [$this->priceMin, $this->priceMax])
+                ->orWhereBetween('web_objetos_ventas.plata', [$this->priceMin, $this->priceMax]);
             })
+           
             ->orderByDesc('id')
             ->get();
         return view('livewire.tienda-mercado');
