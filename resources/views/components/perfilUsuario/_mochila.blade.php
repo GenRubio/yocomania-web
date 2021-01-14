@@ -149,10 +149,10 @@
                                                         <select name="creditos" id="inputState" class="form-control">
                                                             @if ($objeto->precio_oro > 0)
                                                                 <option value="oro" selected>Créditos Oro</option>
-                                                                <option>Créditos Plata</option>
+                                                                <option value="plata">Créditos Plata</option>
                                                             @else
                                                                 <option value="plata" selected>Créditos Plata</option>
-                                                                <option>Créditos Oro</option>
+                                                                <option value="oro">Créditos Oro</option>
                                                             @endif
                                                         </select>
                                                     </div>

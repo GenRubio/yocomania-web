@@ -52,6 +52,7 @@ class MochilaController extends Controller
                 $venta->usuario_id = auth()->user()->id;
                 $venta->oro = $request->get('ventaOro');
                 $venta->save();
+                
             } else if ($tipo == "plata") {
                 $venta = new WebObjetosVenta();
                 $venta->objeto_id = $request->get('objetoId');
