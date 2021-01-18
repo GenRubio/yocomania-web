@@ -128,3 +128,6 @@ function obtenerAmigosRecomendados()
 function eliminarAmigosRecomendados(){
   session()->pull('amigosRecomendados');
 }
+function getUsuario($id){
+  return Usuario::where('id', $id)->first();
+}

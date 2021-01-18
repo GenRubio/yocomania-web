@@ -144,6 +144,18 @@
                                                 @csrf
                                                 <input type="hidden" name="compraId" value="{{ $objeto->id }}">
                                                 <input type="hidden" name="objetoId" value="{{ $objeto->objeto_id }}">
+                                                @if ($objeto->cantidad > 1)
+                                                    <div class="form-row mb-2">
+                                                        <div class="col">
+                                                            <div class="text-center">
+                                                                Cantidad
+                                                            </div>
+                                                            <input type="number" class="form-control form-control-sm"
+                                                                value="1" min="1" max="{{ $objeto->cantidad }}">
+                                                        </div>
+                                                        <div class="col"></div>
+                                                    </div>
+                                                @endif
                                                 <div class="form-row">
                                                     <div class="col">
                                                         <select name="creditos" id="inputState" class="form-control">

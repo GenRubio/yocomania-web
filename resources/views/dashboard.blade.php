@@ -3,7 +3,7 @@
 @section('header')
     <div
         style="background-image: url('{{ url('/images/homeBaner2.png') }}'); 
-                                                                                                                                                                                    background-repeat: no-repeat; background-size: cover;">
+                                                                                                                                                                                                background-repeat: no-repeat; background-size: cover;">
         <div class="container">
             <div style="height: 266px;"></div>
         </div>
@@ -18,6 +18,9 @@
                     <div class="nav nav-tabs mt-2" id="nav-tab" role="tablist">
                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
                             aria-controls="nav-home" aria-selected="true"><strong>Perfil</strong></a>
+                        <a class="nav-item nav-link" id="nav-tweets-tab" data-toggle="tab" href="#nav-tweets" role="tab"
+                            aria-controls="nav-tweets" aria-selected="false" style="color: #dc7e05;"><i
+                                class="fab fa-twitter"></i><strong>Tweets</strong></a>
                         <a class="nav-item nav-link" id="nav-buscarAmigo-tab" data-toggle="tab" href="#nav-buscarAmigo"
                             role="tab" aria-controls="nav-buscarAmigo" aria-selected="false"><strong>Buscar
                                 amigos</strong></a>
@@ -82,7 +85,7 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="nav-mochila" role="tabpanel" aria-labelledby="nav-mochila-tab">
-                               <div id="obtenerMochilaUsuario"></div>
+                                <div id="obtenerMochilaUsuario"></div>
                             </div>
                         </div>
                         <br>
@@ -112,6 +115,9 @@
                     </div>
                     <div class="tab-pane fade" id="nav-contenido" role="tabpanel" aria-labelledby="nav-contenido-tab">
                         @include('components.dashboard.creador-contenido')
+                    </div>
+                    <div class="tab-pane fade" id="nav-tweets" role="tabpanel" aria-labelledby="nav-tweets-tab">
+                        <livewire:tweets/>
                     </div>
                 </div>
             </div>
@@ -202,6 +208,7 @@
             }
             //Mochila Usuario
             obtener_Mochila();
+
             function obtener_Mochila() {
                 $.ajax({
                     url: "{{ route('obtener.mochila') }}",

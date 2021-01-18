@@ -106,6 +106,27 @@
                             </button>
                         </div>
                         <div class="modal-body">
+                            @if ($objeto->oro > 0)
+                                @if (auth()->user()->oro < $objeto->oro)
+                                    <div class="alert alert-danger" role="alert">
+                                        No tienes créditos suficientes.
+                                    </div>
+                                @elseif (auth()->user()->Online == 1)
+                                    <div class="alert alert-danger" role="alert">
+                                        Desconectate del juego para realizar compra.
+                                    </div>
+                                @endif
+                            @else
+                                @if (auth()->user()->plata < $objeto->plata)
+                                    <div class="alert alert-danger" role="alert">
+                                        No tienes créditos suficientes.
+                                    </div>
+                                @elseif (auth()->user()->Online == 1)
+                                    <div class="alert alert-danger" role="alert">
+                                        Desconectate del juego para realizar compra.
+                                    </div>
+                                @endif
+                            @endif
                             <div class="text-left">
                                 <p>Descripcion: {{ $objeto->descripcion }}<br>
                                     Tipo objeto:<br>
@@ -119,9 +140,24 @@
                                 </p>
                                 <div class="d-flex flex-column">
                                     @if ($objeto->precio_oro > 0)
-                                        <p>Precio catalogo:</p>
-                                        <img class="ml-2" src="{{ url('/images/perfil/monedasOro.png') }}" width="30" ,
-                                            height="30">
+                                        <div>
+                                            Precio catalogo:
+                                            <img class="ml-2" src="{{ url('/images/perfil/monedasOro.png') }}"
+                                                width="30" , height="30">
+                                            <strong class="ml-2">{{ $objeto->precio_oro }}</strong>
+                                        </div>
+                                        <div>
+                                            Precio venta:
+                                            @if ($objeto->oro > 0)
+                                                <img class="ml-2" src="{{ url('/images/perfil/monedasOro.png') }}"
+                                                    width="30" , height="30">
+                                                <strong class="ml-2">{{ $objeto->oro }}</strong>
+                                            @else
+                                                <img class="ml-2" src="{{ url('/images/perfil/monedasPlata.png') }}"
+                                                    width="30" , height="30">
+                                                <strong class="ml-2">{{ $objeto->plata }}</strong>
+                                            @endif
+                                        </div>
                                     @else
                                         <div>
                                             Precio catalogo:
@@ -152,11 +188,43 @@
                             @endif
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary">Comprar</button>
+                            @if (auth()->user()->id == $objeto->usuario_id)
+                                <button id="eliminar{{ $objeto->id }}" wire:click="eliminar({{ $objeto->id }})"
+                                    type="button" class="btn btn-danger">Eliminar venta</button>
+                            @else
+                                @if ($objeto->oro > 0)
+                                    @if (auth()->user()->oro < $objeto->oro)
+                                        <button type="button" class="btn btn-primary" disabled>Comprar</button>
+                                    @elseif (auth()->user()->Online == 1)
+                                        <button type="button" class="btn btn-primary" disabled>Comprar</button>
+                                    @else
+                                        <button id="comprar{{ $objeto->id }}" wire:click="comprar({{ $objeto->id }})"
+                                            type="button" class="btn btn-primary">Comprar</button>
+                                    @endif
+                                @else
+                                    @if (auth()->user()->plata < $objeto->plata)
+                                        <button type="button" class="btn btn-primary" disabled>Comprar</button>
+                                    @elseif (auth()->user()->Online == 1)
+                                        <button type="button" class="btn btn-primary" disabled>Comprar</button>
+                                    @else
+                                        <button id="comprar{{ $objeto->id }}" wire:click="comprar({{ $objeto->id }})"
+                                            type="button" class="btn btn-primary">Comprar</button>
+                                    @endif
+                                @endif
+                            @endif
                         </div>
                     </div>
                 </div>
             </div>
+            <script>
+                $("#eliminar{{ $objeto->id }}").click(function() {
+                    $("#objeto{{ $objeto->id }}").modal('hide');
+                });
+                $("#comprar{{ $objeto->id }}").click(function() {
+                    $("#objeto{{ $objeto->id }}").modal('hide');
+                });
+
+            </script>
         @endforeach
     </div>
 </div>
