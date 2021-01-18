@@ -28,7 +28,7 @@
                     Fecha población: {{ $tweet->created_at }}
                     <div class=" border rounded">
                         <div class="p-3">
-                            <h5 style="color: #3490dc;"><strong>Gen</strong></h5>
+                            <h5 style="color: #3490dc;"><strong>{{ getUserName(auth()->user()->id) }}</strong></h5>
                             {!! nl2br(e($tweet->tweet)) !!}
                         </div>
                     </div>

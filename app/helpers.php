@@ -119,15 +119,22 @@ function obtenerAmigosRecomendados()
 {
   if (!session()->has('amigosRecomendados')) {
     $amigosRecomendados = Usuario::inRandomOrder()
-    ->limit(7)
-    ->get();
+      ->limit(7)
+      ->get();
 
     session(['amigosRecomendados' => $amigosRecomendados]);
   }
 }
-function eliminarAmigosRecomendados(){
+function eliminarAmigosRecomendados()
+{
   session()->pull('amigosRecomendados');
 }
-function getUsuario($id){
+function getUsuario($id)
+{
   return Usuario::where('id', $id)->first();
+}
+function getUserName($id)
+{
+  $user = Usuario::where('id', $id)->first();
+  return $user->nombre;
 }
