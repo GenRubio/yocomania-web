@@ -12,5 +12,6 @@ class WebTweet extends Model
         'usuario_id',
         'tweet',
         'likes',
+        'comunicado',
     ];
 }

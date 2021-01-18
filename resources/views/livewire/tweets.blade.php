@@ -7,15 +7,20 @@
                     role="tab" aria-controls="nav-yocomania" aria-selected="true"><strong>Yocomania</strong></a>
                 <a class="nav-item nav-link" id="nav-mis-tweets-tab" data-toggle="tab" href="#nav-mis-tweets" role="tab"
                     aria-controls="nav-mis-tweets" aria-selected="false"><strong>Mis Tweets</strong></a>
+                <a class="nav-item nav-link" id="nav-comunicados-tab" data-toggle="tab" href="#nav-comunicados" role="tab"
+                    aria-controls="nav-comunicados" aria-selected="false"><strong>Comunicados</strong></a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-yocomania" role="tabpanel"
                 aria-labelledby="nav-yocomania-tab">
-                <livewire:tweets-create/>
+                <livewire:tweets-create />
             </div>
             <div class="tab-pane fade" id="nav-mis-tweets" role="tabpanel" aria-labelledby="nav-mis-tweets-tab">
                 <livewire:tweets-delete />
+            </div>
+            <div class="tab-pane fade" id="nav-comunicados" role="tabpanel" aria-labelledby="nav-comunicados-tab">
+               <livewire:tweets-comunicado />
             </div>
         </div>
     </div>
