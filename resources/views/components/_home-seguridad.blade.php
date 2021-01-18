@@ -146,6 +146,9 @@
     </div>
     <div class="col-md-auto"></div>
     <div class="col p-0" id="barraDerecha">
-        @include('layouts.home._barraDerecha')
+        @php
+        $tag = "seguridad";
+        @endphp
+        @include('layouts.home._barraDerecha', ['tag' => $tag])
     </div>
 </div>

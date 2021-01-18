@@ -33,9 +33,7 @@
                 </div>
                 <div class="col align-self-end">
                     <!-- canvas image -->
-                    <img src="{{ url('/images/homeSVG/nerdEventos.svg') }}"
-                    height="160",
-                    width="100">
+                    <img src="{{ url('/images/homeSVG/nerdEventos.svg') }}" height="160" , width="100">
                 </div>
             </div>
             <hr style="border-top: 1px dashed white">
@@ -68,7 +66,7 @@
                         <div class="card-body" style="background-color: #c6481dc2;">
                             <h4 class="card-title"><strong>{!! $evento->titulo !!}</strong></h4>
                             <p class="card-text">{!! nl2br(e($evento->descripcion)) !!}</p>
-                            @if ($evento->link != "")
+                            @if ($evento->link != '')
 
                                 <div class="rounded"
                                     style="background-image: url('{{ url('' . $evento->link . '') }}'); height:340px; width: 100%;background-repeat: no-repeat;background-size: 100% 100%">
@@ -117,9 +115,7 @@
                 </div>
                 <div class="col align-self-end">
                     <!-- canvas image -->
-                    <img src="{{ url('/images/homeSVG/rastaEventos.svg') }}"
-                    height="160",
-                    width="125">
+                    <img src="{{ url('/images/homeSVG/rastaEventos.svg') }}" height="160" , width="125">
                 </div>
             </div>
             <div class="row">
@@ -143,6 +139,9 @@
     </div>
     <div class="col-md-auto"></div>
     <div class="col p-0" id="barraDerecha">
-        @include('layouts.home._barraDerecha')
+        @php
+        $tag = "eventos";
+        @endphp
+        @include('layouts.home._barraDerecha', ['tag' => $tag])
     </div>
 </div>

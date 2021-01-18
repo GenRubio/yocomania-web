@@ -12,7 +12,7 @@
     <!-- foreach de eventos-->
     @foreach ($eventos as $evento)
         <button type="button" class="animated-button1 border rounded shadow-lg" data-toggle="modal"
-            data-target="#evento{{ $evento->id }}" style="background-color: #c6481d; width: 100%">
+            data-target="#evento{{ $evento->id }}{{ $tag }}" style="background-color: #c6481d; width: 100%">
             <span></span>
             <span></span>
             <span></span>
@@ -20,7 +20,7 @@
             <strong>{{ $evento->nombre }}</strong><br /><b
                 style="font-size: 15px; color:#fdff00;">{{ $evento->fecha }}</b>
         </button>
-        <div class="modal fade" id="evento{{ $evento->id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal fade" id="evento{{ $evento->id }}{{ $tag }}" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content" style="color: black">
                     <div class="modal-header">

@@ -2,7 +2,7 @@
     style="background-color: #e59305; border-right: 5px solid white;border-bottom: 5px solid white; border-top: 5px solid white; border-left: 5px solid white;">
     <br>
     <div class="container" style="color:white">
-        @include('components._eventos-button')
+        @include('components._eventos-button', ['tag' => $tag])
     </div>
 </div>
 <br>
@@ -10,6 +10,6 @@
     style="background-color: #e59305; border-right: 5px solid white;border-bottom: 5px solid white; border-top: 5px solid white; border-left: 5px solid white;">
     <br>
     <div class="container" style="color:white; height: 100%">
-        @include('components._home-live')
+        @include('components._home-live', ['tag' => $tag])
     </div>
 </div>
