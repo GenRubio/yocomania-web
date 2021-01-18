@@ -106,6 +106,45 @@
                             </button>
                         </div>
                         <div class="modal-body">
+                            <div class="text-left">
+                                <p>Descripcion: {{ $objeto->descripcion }}<br>
+                                    Tipo objeto:<br>
+                                    Vendedor:
+                                    <a href="{{ route('look.user.profile', $objeto->nombre) }}"
+                                        style="text-decoration: none; color: #3490dc;">
+                                        <strong>
+                                            {{ $objeto->nombre }}
+                                        </strong>
+                                    </a>
+                                </p>
+                                <div class="d-flex flex-column">
+                                    @if ($objeto->precio_oro > 0)
+                                        <p>Precio catalogo:</p>
+                                        <img class="ml-2" src="{{ url('/images/perfil/monedasOro.png') }}" width="30" ,
+                                            height="30">
+                                    @else
+                                        <div>
+                                            Precio catalogo:
+                                            <img class="ml-2" src="{{ url('/images/perfil/monedasPlata.png') }}"
+                                                width="30" , height="30">
+                                            <strong class="ml-2">{{ $objeto->precio_plata }}</strong>
+                                        </div>
+                                        <div>
+                                            Precio venta:
+                                            @if ($objeto->oro > 0)
+                                                <img class="ml-2" src="{{ url('/images/perfil/monedasOro.png') }}"
+                                                    width="30" , height="30">
+                                                <strong class="ml-2">{{ $objeto->oro }}</strong>
+                                            @else
+                                                <img class="ml-2" src="{{ url('/images/perfil/monedasPlata.png') }}"
+                                                    width="30" , height="30">
+                                                <strong class="ml-2">{{ $objeto->plata }}</strong>
+                                            @endif
+                                        </div>
+                                    @endif
+
+                                </div>
+                            </div>
                             @if ($objeto->img == 0)
                                 <img class="mt-3" src="{{ url('/images/objetos/previewObject.svg') }}">
                             @else
@@ -113,8 +152,7 @@
                             @endif
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-primary">Comprar</button>
                         </div>
                     </div>
                 </div>
