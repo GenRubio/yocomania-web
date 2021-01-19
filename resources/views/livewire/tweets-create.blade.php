@@ -75,7 +75,15 @@
                             {!! nl2br(e($tweet->tweet)) !!}
                         </div>
                     </div>
-                    <strong style="color: #3490dc;">Likes: {{ $tweet->likes }}</strong>
+                    @if (in_array($tweet->id, $usuarioLikes))
+                        <strong style="color: #e3342f;">
+                            Likes <i class="fas fa-heart"></i>: {{ $tweet->likes }}
+                        </strong>
+                    @else
+                        <strong wire:click="like({{ $tweet->id }})" style="color: #e3342f; cursor:pointer;">
+                            Likes <i class="fas fa-heart"></i>: {{ $tweet->likes }}
+                        </strong>
+                    @endif
                 </div>
             </div>
             @if ($tweet->usuario_id == auth()->user()->id)

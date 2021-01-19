@@ -36,7 +36,7 @@
                             {!! nl2br(e($tweet->tweet)) !!}
                         </div>
                     </div>
-                    <strong style="color: #3490dc;">Likes: {{ $tweet->likes }}</strong>
+                    <strong style="color: #e3342f;">Likes <i class="fas fa-heart"></i>: {{ $tweet->likes }}</strong>
                 </div>
             </div>
         </div>
