@@ -20,8 +20,22 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center mt-1">
-                <button id="publicTweet" type="submit" class="btn btn-primary"><strong>Publicar <i
-                            class="fab fa-twitter"></i>Tweet</strong></button>
+                @if (auth()->user()->admin == 1)
+                    <div class="col-auto">
+                        <select wire:model="tipoTweet" class="custom-select mr-sm-2">
+                            <option value="1" selected>Tweet</option>
+                            <option value="2">Comunicado</option>
+                        </select>
+                    </div>
+                @endif
+
+                <button id="publicTweet" type="submit" class="btn btn-primary">
+                    <strong>
+                        Publicar
+                        <i class="fab fa-twitter"></i>
+                        Tweet
+                    </strong>
+                </button>
             </div>
         </form>
     </div>
@@ -46,7 +60,12 @@
                         </h5>
                     @else
                         <h5 style="color: #3490dc;">
-                            <strong>{{ getUserName($tweet->usuario_id) }}</strong>
+                            <strong>
+                                <a href="{{ route('look.user.profile', getUserName($tweet->usuario_id)) }}"
+                                    style="text-decoration: none">
+                                    {{ getUserName($tweet->usuario_id) }}
+                                </a>
+                            </strong>
                         </h5>
                     @endif
 
@@ -60,7 +79,7 @@
                 </div>
             </div>
             @if ($tweet->usuario_id == auth()->user()->id)
-                <div class="d-flex justify-content-center mt-1">
+                <div class="d-flex justify-content-end mt-1">
                     <button wire:click="eliminar({{ $tweet->id }})" class="btn btn-danger"><strong>Eliminar
                             <i class="fab fa-twitter"></i>Tweet</strong></button>
                 </div>
@@ -68,6 +87,15 @@
         </div>
         <br>
     @endforeach
+    @if (count($tweetsYocomania) >= $amount)
+        <br>
+        <div class="d-flex justify-content-center">
+            <a wire:click="load" class="btn btn-primary btn-lg">
+                <strong>Ver mas <i class="fab fa-twitter"></i>Tweets...</strong>
+            </a>
+        </div>
+        <br> <br> <br>
+    @endif
     <script>
         setInterval(fresh, 10000);
 

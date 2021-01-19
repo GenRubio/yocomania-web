@@ -2,22 +2,22 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Tweets\WebTweet;
 use Livewire\Component;
+use App\Models\Tweets\WebTweet;
 
-class TweetsComunicado extends Component
+class TweetsUsuario extends Component
 {
-    public $comunicados;
+    public $usuario;
+    public $tweetsUsuario;
     public $amount = 20;
 
-    protected $listeners = ['render'];
     public function render()
     {
-        $this->comunicados = WebTweet::where('comunicado', 1)
+        $this->tweetsUsuario = WebTweet::where('usuario_id', $this->usuario)
         ->orderByDesc('id')
         ->take($this->amount)
         ->get();
-        return view('livewire.tweets-comunicado');
+        return view('livewire.tweets-usuario');
     }
     public function load(){
         $this->amount += 20;

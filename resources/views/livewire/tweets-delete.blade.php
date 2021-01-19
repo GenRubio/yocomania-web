@@ -35,11 +35,20 @@
                     <strong style="color: #3490dc;">Likes: {{ $tweet->likes }}</strong>
                 </div>
             </div>
-            <div class="d-flex justify-content-center mt-1">
+            <div class="d-flex justify-content-end mt-1">
                 <button wire:click="eliminar({{ $tweet->id }})" class="btn btn-danger"><strong>Eliminar <i
                             class="fab fa-twitter"></i>Tweet</strong></button>
             </div>
         </div>
         <br>
     @endforeach
+    @if (count($tweetsUsuario) >= $amount)
+        <br>
+        <div class="d-flex justify-content-center">
+            <a wire:click="load" class="btn btn-primary btn-lg">
+                <strong>Ver mas <i class="fab fa-twitter"></i>Tweets...</strong>
+            </a>
+        </div>
+        <br> <br> <br>
+    @endif
 </div>

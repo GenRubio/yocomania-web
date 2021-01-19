@@ -3,7 +3,7 @@
 @section('header')
     <div
         style="background-image: url('{{ url('/images/homeBaner2.png') }}'); 
-                                                                                                                                                                    background-repeat: no-repeat; background-size: cover;">
+                                                                                                                                                                            background-repeat: no-repeat; background-size: cover;">
         <div class="container">
             <div style="height: 266px;"></div>
         </div>
@@ -18,9 +18,15 @@
                     <div class="nav nav-tabs mt-2" id="nav-tab" role="tablist">
                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
                             aria-controls="nav-home" aria-selected="true"><strong>{{ $usuario->nombre }}</strong></a>
+                        <a class="nav-item nav-link" id="nav-tweets-tab" data-toggle="tab" href="#nav-tweets" role="tab"
+                            aria-controls="nav-tweets" aria-selected="false" style="color: #dc7e05;"><i
+                                class="fab fa-twitter"></i><strong>Tweets</strong></a>
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade" id="nav-tweets" role="tabpanel" aria-labelledby="nav-tweets-tab">
+                        <livewire:tweets-usuario :usuario="$usuario->id" />
+                    </div>
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <br>
                         <div class="container shadow-lg rounded" style="background-color: white;">
