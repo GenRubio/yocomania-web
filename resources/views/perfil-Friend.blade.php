@@ -85,8 +85,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="chatAmigo" tabindex="-1" role="dialog" aria-labelledby="chatAmigoLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -96,7 +95,7 @@
                             <div id="avatarPad"></div>
                         </div>
                         <div>
-                            <h3 class="modal-title ml-2 mt-3 nombre-pad" id="exampleModalLabel"
+                            <h3 class="modal-title ml-2 mt-3 nombre-pad" id="chatAmigoLabel"
                                 style="color: #3490dc; font-weight: bold;"></h3>
                         </div>
                     </div>
@@ -105,7 +104,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body"></div>
+                <div class="p-1 modal-body-chat"></div>
             </div>
         </div>
     </div>
@@ -124,7 +123,7 @@
 
             setInterval(function() {
                 if (focusYocomaniacoSearch == false) {
-                    update_last_activity();
+                    //update_last_activity();
                     obtener_Bpads();
                 }
             }, 10000);
@@ -160,8 +159,6 @@
                     }
                 })
             }
-            //****************************************************************
-
             function obtener_Bpads() {
                 $.ajax({
                     url: "{{ route('obtener.bpads') }}",
@@ -197,12 +194,12 @@
                 modal_content += '</div><div class="form-group" align="right">';
                 modal_content += '<button type="button" name="send_chat" id="' + to_user_id +
                     '" class="btn btn-primary send_chat">Enviar</button></div></div>';
-                $('.modal-body').html(modal_content);
+                $('.modal-body-chat').html(modal_content);
                 detectOpenChat = true;
             }
-            $("#exampleModal").on('hidden.bs.modal', function() {
+            $("#chatAmigo").on('hidden.bs.modal', function() {
                 detectOpenChat = false;
-                $('.modal-body').html("");
+                $('.modal-body-chat').html("");
             });
             $(document).on('click', '.start_chat', function() {
 
