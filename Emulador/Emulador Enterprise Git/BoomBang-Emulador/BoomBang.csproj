@@ -70,6 +70,7 @@
     <Compile Include="game\instances\IslaInstance.cs" />
     <Compile Include="game\instances\ItemConcursoInstance.cs" />
     <Compile Include="game\listas.cs" />
+    <Compile Include="game\manager\BuyObjectDAO.cs" />
     <Compile Include="game\manager\daily_reward\codigos_promocionales.cs" />
     <Compile Include="game\manager\Interfazmanager.cs" />
     <Compile Include="game\manager\npcManager.cs" />

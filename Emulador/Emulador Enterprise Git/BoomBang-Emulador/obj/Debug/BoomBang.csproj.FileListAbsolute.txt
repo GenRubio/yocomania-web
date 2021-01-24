@@ -432,3 +432,12 @@ D:\LARAVEL\yocomania\Emulador\Emulador Enterprise Git\BoomBang-Emulador\obj\Debu
 D:\LARAVEL\yocomania\Emulador\Emulador Enterprise Git\BoomBang-Emulador\obj\Debug\BoomBang.csproj.CopyComplete
 D:\LARAVEL\yocomania\Emulador\Emulador Enterprise Git\BoomBang-Emulador\obj\Debug\BoomBang.exe
 D:\LARAVEL\yocomania\Emulador\Emulador Enterprise Git\BoomBang-Emulador\obj\Debug\BoomBang.pdb
+D:\LARAVEL\yocomaniaWeb\Emulador\Emulador Enterprise Git\BoomBang-Emulador\bin\Debug\BoomBang.exe.config
+D:\LARAVEL\yocomaniaWeb\Emulador\Emulador Enterprise Git\BoomBang-Emulador\bin\Debug\BoomBang.exe
+D:\LARAVEL\yocomaniaWeb\Emulador\Emulador Enterprise Git\BoomBang-Emulador\bin\Debug\BoomBang.pdb
+D:\LARAVEL\yocomaniaWeb\Emulador\Emulador Enterprise Git\BoomBang-Emulador\obj\Debug\BoomBang.csprojAssemblyReference.cache
+D:\LARAVEL\yocomaniaWeb\Emulador\Emulador Enterprise Git\BoomBang-Emulador\obj\Debug\BoomBang.server.panel_control.resources
+D:\LARAVEL\yocomaniaWeb\Emulador\Emulador Enterprise Git\BoomBang-Emulador\obj\Debug\BoomBang.csproj.GenerateResource.cache
+D:\LARAVEL\yocomaniaWeb\Emulador\Emulador Enterprise Git\BoomBang-Emulador\obj\Debug\BoomBang.csproj.CopyComplete
+D:\LARAVEL\yocomaniaWeb\Emulador\Emulador Enterprise Git\BoomBang-Emulador\obj\Debug\BoomBang.exe
+D:\LARAVEL\yocomaniaWeb\Emulador\Emulador Enterprise Git\BoomBang-Emulador\obj\Debug\BoomBang.pdb

@@ -1,4 +1,4 @@
-﻿using BoomBang.game.handler;
+using BoomBang.game.handler;
 using BoomBang.game.instances.manager;
 using BoomBang.game.instances.MiniGames;
 using BoomBang.game.manager;
@@ -307,6 +307,7 @@ namespace BoomBang.game.instances
         {
             using (mysql client = new mysql())
             {
+                ObjetosEnSala.Clear();
                 client.SetParameter("Id", Escenario.id);
                 foreach (DataRow row in client.ExecuteQueryTable("SELECT * FROM objetos_comprados WHERE sala_id = @Id").Rows)
                 {
@@ -627,6 +628,8 @@ namespace BoomBang.game.instances
                 server.AppendParameter(new object[] { Escenario.terreno_config, Escenario.object_config });
                 server.AppendParameter(new object[] { Escenario.terreno_colores, Escenario.object_colores });
                 server.AppendParameter(new object[] { Escenario.terreno_rgb, Escenario.object_rgb });
+
+                LoadObjects();
                 server.AppendParameter(ObjetosEnSala.Count);
                 foreach (BuyObjectInstance Item in ObjetosEnSala.Values)
                 {
