@@ -16,6 +16,8 @@
     <title>Yoco: {{ $usuario->nombre }}</title>
     <script src="https://kit.fontawesome.com/b6add834b6.js" crossorigin="anonymous"></script>
     {{-- JS Config --}}
+    <livewire:styles />
+    <livewire:scripts />
     <script type="text/javascript">
         @include('partials.viewconfig.head_scripts')
         @yield('head_script')
