@@ -10,7 +10,7 @@
                 </label>
                 <span id="nombreRegistroError" style="color:red" class="help-block"></span>
                 <input name="nombre" type="text" maxlength="13" class="form-control" id="nombre"
-                    aria-describedby="nombre" placeholder="Tu nombre en el juego...">
+                    aria-describedby="nombre" placeholder="Tu nombre en el juego..." required>
                 <small id="nombreHelp" class="form-text text-muted" style="color: black;">Tu nombre único en
                     Yocomania.</small>
             </div>
@@ -22,7 +22,7 @@
                 </label>
                 <span id="emailRegistroError" style="color:red" class="help-block"></span>
                 <input name="email" type="email" class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp" placeholder="Escribe aquí tu correo...">
+                    aria-describedby="emailHelp" placeholder="Escribe aquí tu correo..." required>
                 <small id="emailHelp" class="form-text text-muted" style="color: black;">Necesitaremos esta información
                     para restaurar su
                     cuenta en caso de que pierda el acceso.</small>
@@ -35,7 +35,7 @@
                 </label>
                 <span id="passwordRegistroError" style="color:red" class="help-block"></span>
                 <input name="password" type="password" minlength="6" minlength="20" class="form-control" id="password"
-                    aria-describedby="password" placeholder="Contraseña...">
+                    aria-describedby="password" placeholder="Contraseña..." required>
                 <small id="passwordHelp" class="form-text text-muted" style="color: black;">Su contraseña debe tener al
                     menos 6 caracteres y maximo de 20.<br> <strong>¡Asegúrese de que su contraseña sea
                         diferente a la
@@ -49,7 +49,7 @@
                 </label>
                 <span id="passwordRepeatRegistroError" style="color:red" class="help-block"></span>
                 <input name="passwordRepeat" type="password" minlength="6" class="form-control" id="passwordRepeta"
-                    aria-describedby="passwordRepeta" placeholder="Repite la contraseña...">
+                    aria-describedby="passwordRepeta" placeholder="Repite la contraseña..." required>
             </div>
             <label for="personaje" style="color: #19a8d1">
                 <strong>
@@ -109,7 +109,7 @@
             <br>
             <div class="d-flex justify-content-center">
                 <div class="form-check">
-                    <input name="terminos" class="form-check-input" type="checkbox" value="ok" id="defaultCheck1">
+                    <input name="terminos" class="form-check-input" type="checkbox" value="ok" id="defaultCheck1" required>
                     <label class="form-check-label" for="defaultCheck1" style="color: black">
                         <strong>Acepto los <a href="#" data-toggle="modal" data-target="#terminosModal">Términos y
                                 condiciones</a></strong>

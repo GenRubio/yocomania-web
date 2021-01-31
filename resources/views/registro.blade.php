@@ -14,6 +14,7 @@
         @yield('head_script')
     </script>
     <title>Yocomania</title>
+    <link rel="icon" href="{{ asset('images/favicon.png') }}">
 </head>
 
 <body>
@@ -68,7 +69,10 @@
                 </div>
                 <div class="col-md-auto"></div>
                 <div class="col p-0" id="barraDerecha">
-                    @include('layouts.home._barraDerecha')
+                    @php
+                    $tag = "registro";
+                    @endphp
+                    @include('layouts.home._barraDerecha', ['tag' => $tag])
                 </div>
             </div>
         </div>

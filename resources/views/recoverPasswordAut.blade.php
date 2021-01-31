@@ -14,6 +14,7 @@
         @yield('head_script')
     </script>
     <title>Yocomania</title>
+    <link rel="icon" href="{{ asset('images/favicon.png') }}">
 </head>
 
 <body>
@@ -76,14 +77,14 @@
                                             <h4><strong style="color: #348fdb;">@lang('Nueva contraseña')</strong></h4>
                                             <span id="passwordRecoverError" style="color:red" class="help-block"></span>
                                             <input name="passwordRecover" type="password" class="form-control"
-                                                placeholder="Contraseña">
+                                                placeholder="Contraseña" required>
                                         </div>
                                         <div class="form-group">
                                             <h4><strong style="color: #348fdb;">@lang('Repite nueva contraseña')</strong></h4>
                                             <span id="passwordRepiteRecoverError" style="color:red"
                                                 class="help-block"></span>
                                             <input name="passwordRepiteRecover" type="password" class="form-control"
-                                                placeholder="Repite contraseña">
+                                                placeholder="Repite contraseña" required>
                                         </div>
 
                                         <button type="submit"
@@ -101,7 +102,10 @@
                 </div>
                 <div class="col-md-auto"></div>
                 <div class="col p-0" id="barraDerecha">
-                    @include('layouts.home._barraDerecha')
+                    @php
+                    $tag = "recoverPasswordAu";
+                    @endphp
+                    @include('layouts.home._barraDerecha', ['tag' => $tag])
                 </div>
             </div>
         </div>

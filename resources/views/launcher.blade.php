@@ -9,6 +9,7 @@
     <link href="{{ url('/css/avatar.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url('/css/eventoButtons.css') }}">
     <title>Yocomania</title>
+    <link rel="icon" href="{{ asset('images/favicon.png') }}">
 </head>
 
 <body>

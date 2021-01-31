@@ -14,6 +14,7 @@
         @yield('head_script')
     </script>
     <title>Yocomania</title>
+    <link rel="icon" href="{{ asset('images/favicon.png') }}">
 </head>
 
 <body>
@@ -82,13 +83,13 @@
                                             <h4><strong style="color: #348fdb;">Nombre de usuario:</strong></h4>
                                             <span id="nombreRecoverError" style="color:red" class="help-block"></span>
                                             <input name="nombreRecover" type="text" class="form-control"
-                                                placeholder="Usuario">
+                                                placeholder="Usuario" required>
                                         </div>
                                         <div class="form-group">
                                             <h4><strong style="color: #348fdb;">Correo electrónico:</strong></h4>
                                             <span id="emailRecoverError" style="color:red" class="help-block"></span>
                                             <input name="emailRecover" type="email" class="form-control"
-                                                aria-describedby="emailHelp" placeholder="Escribe tu email">
+                                                aria-describedby="emailHelp" placeholder="Escribe tu email" required>
                                         </div>
 
                                         <button type="submit"
@@ -106,7 +107,10 @@
                 </div>
                 <div class="col-md-auto"></div>
                 <div class="col p-0" id="barraDerecha">
-                    @include('layouts.home._barraDerecha')
+                    @php
+                    $tag = "recoverPassword";
+                    @endphp
+                    @include('layouts.home._barraDerecha', ['tag' => $tag])
                 </div>
             </div>
         </div>

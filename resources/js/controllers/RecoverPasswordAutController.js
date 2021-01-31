@@ -46,12 +46,16 @@ const RecoverPasswordAutController = {
                     $("#passwordRecoverError").text(error.responseJSON.errors
                             .passwordRecover)
                         .fadeIn();
+                        return;
                 }
                 if (error.responseJSON.errors.passwordRepiteRecover) {
                     $("#passwordRepiteRecoverError").text(error.responseJSON.errors
                             .passwordRepiteRecover)
                         .fadeIn();
+                        return;
                 }
+                $("#cambiarContraseña")[0].reset();
+                location.href = redirectUrl;
             }
         })
     },
