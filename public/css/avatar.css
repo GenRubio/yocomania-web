@@ -1,14 +1,14 @@
-.nerd{background-image:url(/images/avatars/nerd.png);}
-.vieja{background-image:url(/images/avatars/vieja.png);}
-.rasta{background-image:url(/images/avatars/rasta.png);}
-.viejo{background-image:url(/images/avatars/viejo.png);}
-.endia{background-image:url(/images/avatars/endia.png);}
-.mafioso{background-image:url(/images/avatars/mafioso.png);}
-.zeta{background-image:url(/images/avatars/zeta.png);}
-.gata{background-image:url(/images/avatars/gata.png);}
-.boomer{background-image:url(/images/avatars/boomer.png);}
-.DJ{background-image:url(/images/avatars/DJ.png);}
-.bruja{background-image:url(/images/avatars/bruja.png);}
+.nerd{background-image:url('https://yocobang.com/public/images/avatars/nerd.png');}
+.vieja{background-image:url('https://yocobang.com/public/images/avatars/nerd.png');}
+.rasta{background-image:url('https://yocobang.com/public/images/avatars/nerd.png');}
+.viejo{background-image:url('https://yocobang.com/public/images/avatars/nerd.png');}
+.endia{background-image:url('https://yocobang.com/public/images/avatars/nerd.png');}
+.mafioso{background-image:url('https://yocobang.com/public/images/avatars/nerd.png');}
+.zeta{background-image:url('https://yocobang.com/public/images/avatars/nerd.png');}
+.gata{background-image:url('https://yocobang.com/public/images/avatars/nerd.png');}
+.boomer{background-image:url('https://yocobang.com/public/images/avatars/nerd.png');}
+.DJ{background-image:url('https://yocobang.com/public/images/avatars/nerd.png');}
+.bruja{background-image:url('https://yocobang.com/public/images/avatars/nerd.png');}
 
 .cc-selector input:active +.drinkcard-cc{opacity: .9;}
 .cc-selector input:checked +.drinkcard-cc{
