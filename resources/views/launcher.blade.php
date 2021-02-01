@@ -65,7 +65,7 @@
                                 <div class="card-body" style="background-color: #c6481dc2">
 
                                     <div class="d-flex justify-content-center">
-                                        <a href="#">
+                                        <a href="{{ url('/download/YocoSetup.exe') }}">
                                             <img src="{{ url('/images/download/windows-button.png') }}" , height="100px"
                                                 , width="auto">
                                         </a>
