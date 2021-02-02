@@ -27,15 +27,23 @@ namespace BoomBang.game.manager
         }
         private static bool checkObjectItemId(int id)
         {
-            foreach(ObjetoLanzadoInstance objetos in ObjetosAreas.Values.ToList())
+            try
             {
-                if (objetos.key == id)
+                foreach (ObjetoLanzadoInstance objetos in ObjetosAreas.Values.ToList())
                 {
-                    return true;
+                    if (objetos.key == id)
+                    {
+                        return true;
+                    }
                 }
+                return false;
             }
-            return false;
+            catch
+            {
+                return false;
+            }   
         }
+
         public static void Lanzar_Objeto(SalaInstance Sala, int ItemID, string typo)
         {
             int Key = new Random().Next(1, 50000);

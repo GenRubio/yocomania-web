@@ -12,6 +12,7 @@
     <script type="text/javascript">
         @include('partials.viewconfig.head_scripts')
         @yield('head_script')
+
     </script>
     <title>Yocomania</title>
     <link rel="icon" href="{{ asset('images/favicon.png') }}">
@@ -108,7 +109,7 @@
                 <div class="col-md-auto"></div>
                 <div class="col p-0" id="barraDerecha">
                     @php
-                    $tag = "recoverPassword";
+                        $tag = 'recoverPassword';
                     @endphp
                     @include('layouts.home._barraDerecha', ['tag' => $tag])
                 </div>
@@ -117,6 +118,49 @@
         <br>
         @include('components._footerSocialNetwork')
     </div>
-</body>
-</html>
+    <script>
+        $("#succesSendEmail").fadeOut();
+        $(document).ready(function() {
+            $("#recuperarContraseña").on('submit'function(event) {
+                event.preventDefault();
+                $("#nombreRecoverError").fadeOut();
+                $("#emailRecoverError").fadeOut();
 
+                $.ajax({
+                    url: "{{ route('send.new.password') }}",
+                    method: 'POST',
+                    data: new FormData(this),
+                    dataType: 'json',
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success: function(data) {
+                        if (data.content == "error") {
+                            $("#nombreRecoverError").text("Los datos no son correctos.")
+                                .fadeIn();
+                        } else {
+                            $("#recuperarContraseña")[0].reset();
+                            $("#succesSendEmail").text(data.content);
+                            $("#succesSendEmail").fadeIn();
+                        }
+                    },
+                    error: function(error) {
+                        if (error.responseJSON.errors.nombreRecover) {
+                            $("#nombreRecoverError").text(error.responseJSON.errors
+                                    .nombreRecover)
+                                .fadeIn();
+                        }
+                        if (error.responseJSON.errors.emailRecover) {
+                            $("#emailRecoverError").text(error.responseJSON.errors
+                                    .emailRecover)
+                                .fadeIn();
+                        }
+                    }
+                })
+            })
+        });
+
+    </script>
+</body>
+
+</html>

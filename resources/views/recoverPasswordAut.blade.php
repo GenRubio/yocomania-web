@@ -12,6 +12,7 @@
     <script type="text/javascript">
         @include('partials.viewconfig.head_scripts')
         @yield('head_script')
+
     </script>
     <title>Yocomania</title>
     <link rel="icon" href="{{ asset('images/favicon.png') }}">
@@ -80,7 +81,8 @@
                                                 placeholder="Contraseña" required>
                                         </div>
                                         <div class="form-group">
-                                            <h4><strong style="color: #348fdb;">@lang('Repite nueva contraseña')</strong></h4>
+                                            <h4><strong style="color: #348fdb;">@lang('Repite nueva
+                                                    contraseña')</strong></h4>
                                             <span id="passwordRepiteRecoverError" style="color:red"
                                                 class="help-block"></span>
                                             <input name="passwordRepiteRecover" type="password" class="form-control"
@@ -103,7 +105,7 @@
                 <div class="col-md-auto"></div>
                 <div class="col p-0" id="barraDerecha">
                     @php
-                    $tag = "recoverPasswordAu";
+                        $tag = 'recoverPasswordAu';
                     @endphp
                     @include('layouts.home._barraDerecha', ['tag' => $tag])
                 </div>
@@ -112,6 +114,48 @@
         <br>
         @include('components._footerSocialNetwork')
     </div>
+    <script>
+        $(document).ready(function() {
+            $("#cambiarContraseña").on('submit'function(event) {
+                event.preventDefault();
+                const url = Utils.getUrl(this.routes.getRecoverPasswordValidate);
+                const redirectUrl = Utils.getUrl(this.routes.redirectMe);
+
+                $("#passwordRecoverError").fadeOut();
+                $("#passwordRepiteRecoverError").fadeOut();
+                $.ajax({
+                    url: "{{ route('recover.password.validate') }}",
+                    method: 'POST',
+                    data: new FormData(this),
+                    dataType: 'json',
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success: function(data) {
+                        $("#cambiarContraseña")[0].reset();
+                        location.href = "{{ route('me') }}";
+                    },
+                    error: function(error) {
+                        if (error.responseJSON.errors.passwordRecover) {
+                            $("#passwordRecoverError").text(error.responseJSON.errors
+                                    .passwordRecover)
+                                .fadeIn();
+                            return;
+                        }
+                        if (error.responseJSON.errors.passwordRepiteRecover) {
+                            $("#passwordRepiteRecoverError").text(error.responseJSON.errors
+                                    .passwordRepiteRecover)
+                                .fadeIn();
+                            return;
+                        }
+                        $("#cambiarContraseña")[0].reset();
+                        location.href = "{{ route('me') }}";
+                    }
+                })
+            })
+        });
+
+    </script>
 </body>
 
 </html>
