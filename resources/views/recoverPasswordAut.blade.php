@@ -116,7 +116,7 @@
     </div>
     <script>
         $(document).ready(function() {
-            $("#cambiarContraseña").on('submit'function(event) {
+            $("#cambiarContraseña").on('submit',function(event) {
                 event.preventDefault();
                 const url = Utils.getUrl(this.routes.getRecoverPasswordValidate);
                 const redirectUrl = Utils.getUrl(this.routes.redirectMe);

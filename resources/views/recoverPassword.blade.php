@@ -121,7 +121,7 @@
     <script>
         $("#succesSendEmail").fadeOut();
         $(document).ready(function() {
-            $("#recuperarContraseña").on('submit'function(event) {
+            $("#recuperarContraseña").on('submit',function(event) {
                 event.preventDefault();
                 $("#nombreRecoverError").fadeOut();
                 $("#emailRecoverError").fadeOut();

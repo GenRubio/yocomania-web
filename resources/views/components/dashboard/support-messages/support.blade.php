@@ -38,7 +38,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                {{ $mensaje->contenido }}
+                                {!! nl2br(e($mensaje->contenido))  !!}
                                 <br>
                                 {{ $mensaje->fecha }}
                             </div>
