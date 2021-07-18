@@ -12,7 +12,7 @@
         <div class="form-group">
             <label>Nombre producto</label>
             @error('nombre') <span class="error" style="color: red">{{ $message }}</span> @enderror
-            <input wire:model.debounce.500ms="nombre" type="text" class="form-control" placeholder="Nombre">
+            <input wire:model.debounce.500ms="nom2re" type="text" class="form-control" placeholder="Nombre">
         </div>
         <div class="form-group">
             <label>Precio</label>
